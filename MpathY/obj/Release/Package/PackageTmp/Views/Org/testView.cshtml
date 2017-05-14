@@ -1,0 +1,39 @@
+﻿
+@model MpathY.Models.orgtypedb
+@{
+    ViewBag.Title = "testView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search Result:</h2>
+@{
+    if(Model.GetConnection().Count!=0)
+    { 
+        foreach (var org in Model.GetConnection())
+        {
+            <li>@org</li>
+        }
+    }
+    else
+    {
+        <li>Sorry, No record found...</li>
+    }
+}
+
+<div id="map"></div>
+
+<script>
+    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: -34.397, lng: 150.644 },
+            //center: {Melbourne},
+            scrollwheel: false,
+            zoom: 8
+        });
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALKurKO9X3z8JL7-CaBiVHXOgXARt7lTs&callback=initMap" async defer></script>
+
+

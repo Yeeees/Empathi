@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_Us" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="Accomodation" xml:space="preserve">
+    <value>Accomodation</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>عربى</value>
+  </data>
+  <data name="Burmese" xml:space="preserve">
+    <value>درى</value>
+  </data>
+  <data name="Button_Clear_Address" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Button_Clear_Checkbox" xml:space="preserve">
+    <value>Clear checkbox</value>
+  </data>
+  <data name="Button_Language_Choice" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Button_Search_Address" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Conversation_Starter" xml:space="preserve">
+    <value>Conversation Starter</value>
+  </data>
+  <data name="Conversation_Starter_Slogan" xml:space="preserve">
+    <value>Want to start a conversation in your own language? We can help you!</value>
+  </data>
+  <data name="Counselling" xml:space="preserve">
+    <value>Drug and Alcohol Counselling</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>Plan for your children's education</value>
+  </data>
+  <data name="Education1" xml:space="preserve">
+    <value>Contact Humanitarian Settlement Services</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="English_Lesson" xml:space="preserve">
+    <value>English Support</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>Food Support</value>
+  </data>
+  <data name="Grocery" xml:space="preserve">
+    <value>Where is the supermarket?</value>
+  </data>
+  <data name="Heading_Search_NGO" xml:space="preserve">
+    <value>Search Support Services</value>
+  </data>
+  <data name="Health" xml:space="preserve">
+    <value>Health Support</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="Hint_Red_Pin" xml:space="preserve">
+    <value>You can click these red pins in the map to view more information.</value>
+  </data>
+  <data name="Hint_Search_Address" xml:space="preserve">
+    <value>You can search an address here:</value>
+  </data>
+  <data name="Hint_Start_Conversation" xml:space="preserve">
+    <value>You can select a sentence from the box below and we translate it for you with a voiceover in English!</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Humanitarian_Settlement" xml:space="preserve">
+    <value>Humanitarian Settlement</value>
+  </data>
+  <data name="Conversation_Direction" xml:space="preserve">
+    <value>Bahasa Indonesia</value>
+  </data>
+  <data name="Input_Location" xml:space="preserve">
+    <value>Enter your location here:</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>Job Support</value>
+  </data>
+  <data name="Learn_English" xml:space="preserve">
+    <value>Learn English</value>
+  </data>
+  <data name="Learn_English1" xml:space="preserve">
+    <value>Locate your nearest service to learn English.</value>
+  </data>
+  <data name="Legal_Advice" xml:space="preserve">
+    <value>Legal advice</value>
+  </data>
+  <data name="Looking" xml:space="preserve">
+    <value>What are you looking for?</value>
+  </data>
+  <data name="Medical_Help" xml:space="preserve">
+    <value>Medical help</value>
+  </data>
+  <data name="Medical_Help1" xml:space="preserve">
+    <value>Get in touch with health support</value>
+  </data>
+  <data name="Myki" xml:space="preserve">
+    <value>How to buy ticket?</value>
+  </data>
+  <data name="Need_Job" xml:space="preserve">
+    <value>Need job?</value>
+  </data>
+  <data name="Need_Job1" xml:space="preserve">
+    <value>Contact your nearest service to get a job.</value>
+  </data>
+  <data name="Pashto" xml:space="preserve">
+    <value>မြန်မာ</value>
+  </data>
+  <data name="Search_NGO" xml:space="preserve">
+    <value>Search Support Services</value>
+  </data>
+  <data name="Search_NGO_Slogan" xml:space="preserve">
+    <value>Looking for help? We can help you find them!</value>
+    <comment>start of section 1</comment>
+  </data>
+  <data name="Sentence1" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="Sentence10" xml:space="preserve">
+    <value>Where is the nearest tram or bus stop?</value>
+  </data>
+  <data name="Sentence11" xml:space="preserve">
+    <value>Sorry</value>
+  </data>
+  <data name="Sentence12" xml:space="preserve">
+    <value>Thank you</value>
+  </data>
+  <data name="Sentence13" xml:space="preserve">
+    <value>How much does this cost?</value>
+  </data>
+  <data name="Sentence14" xml:space="preserve">
+    <value>I can't understand</value>
+  </data>
+  <data name="Sentence15" xml:space="preserve">
+    <value>I feel sick</value>
+  </data>
+  <data name="Sentence16" xml:space="preserve">
+    <value>I need a place to stay</value>
+  </data>
+  <data name="Sentence17" xml:space="preserve">
+    <value>I need doctor</value>
+  </data>
+  <data name="Sentence18" xml:space="preserve">
+    <value>I need food</value>
+  </data>
+  <data name="Sentence19" xml:space="preserve">
+    <value>I need job</value>
+  </data>
+  <data name="Sentence2" xml:space="preserve">
+    <value>How are you?</value>
+  </data>
+  <data name="Sentence20" xml:space="preserve">
+    <value>I need mental health support</value>
+  </data>
+  <data name="Sentence21" xml:space="preserve">
+    <value>I need money</value>
+  </data>
+  <data name="Sentence22" xml:space="preserve">
+    <value>I need sanitary pad</value>
+  </data>
+  <data name="Sentence23" xml:space="preserve">
+    <value>I need to buy bread</value>
+  </data>
+  <data name="Sentence24" xml:space="preserve">
+    <value>I need to learn English</value>
+  </data>
+  <data name="Sentence25" xml:space="preserve">
+    <value>I need to make a phone call</value>
+  </data>
+  <data name="Sentence26" xml:space="preserve">
+    <value>I need visa support</value>
+  </data>
+  <data name="Sentence27" xml:space="preserve">
+    <value>I need water</value>
+  </data>
+  <data name="Sentence28" xml:space="preserve">
+    <value>Is this halal?</value>
+  </data>
+  <data name="Sentence29" xml:space="preserve">
+    <value>It is very cold</value>
+  </data>
+  <data name="Sentence3" xml:space="preserve">
+    <value>I am good</value>
+  </data>
+  <data name="Sentence30" xml:space="preserve">
+    <value>What time is it?</value>
+  </data>
+  <data name="Sentence4" xml:space="preserve">
+    <value>Help me!</value>
+  </data>
+  <data name="Sentence5" xml:space="preserve">
+    <value>I am a refugee</value>
+  </data>
+  <data name="Sentence6" xml:space="preserve">
+    <value>I don't speak English very well</value>
+  </data>
+  <data name="Sentence7" xml:space="preserve">
+    <value>Where is the toilet?</value>
+  </data>
+  <data name="Sentence8" xml:space="preserve">
+    <value>How to get to this address?</value>
+  </data>
+  <data name="Sentence9" xml:space="preserve">
+    <value>Where is the nearest train station?</value>
+  </data>
+  <data name="Start_Conversation" xml:space="preserve">
+    <value>Start conversation</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>When does the train leave?</value>
+  </data>
+  <data name="Train" xml:space="preserve">
+    <value>Where is the station?</value>
+  </data>
+  <data name="Translation" xml:space="preserve">
+    <value>Translation</value>
+  </data>
+  <data name="Vaccinate" xml:space="preserve">
+    <value>Need to vaccinate?</value>
+  </data>
+  <data name="Vaccinate1" xml:space="preserve">
+    <value>Find your nearest health provider</value>
+  </data>
+  <data name="Voice_Translation" xml:space="preserve">
+    <value>Voice translation</value>
+  </data>
+  <data name="Volunteer" xml:space="preserve">
+    <value>Volunteer</value>
+  </data>
+  <data name="Watermark_Location" xml:space="preserve">
+    <value>Input your location here</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome to Empathi</value>
+  </data>
+  <data name="Welcome1" xml:space="preserve">
+    <value>We help you connect with support organizations around Victoria</value>
+  </data>
+  <data name="Indonesian" xml:space="preserve">
+    <value>Bahasa Indonesia</value>
+  </data>
+  <data name="Button_Close_Popup" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Popup_Language_Choice" xml:space="preserve">
+    <value>Choose language:</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="Email_Send" xml:space="preserve">
+    <value>Send Email</value>
+  </data>
+  <data name="Get_There" xml:space="preserve">
+    <value>How to get there?</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>Phone number:</value>
+  </data>
+  <data name="Sentence31" xml:space="preserve">
+    <value>I need financial support</value>
+  </data>
+  <data name="Sentence32" xml:space="preserve">
+    <value>How much is the rent</value>
+  </data>
+  <data name="Sentence33" xml:space="preserve">
+    <value>I want to be a volunteer</value>
+  </data>
+  <data name="Sentence34" xml:space="preserve">
+    <value>I need a volunteer to help me</value>
+  </data>
+  <data name="Sentence35" xml:space="preserve">
+    <value>I need to quit drinking</value>
+  </data>
+  <data name="Sentence36" xml:space="preserve">
+    <value>I need to quit drug</value>
+  </data>
+  <data name="Sentence37" xml:space="preserve">
+    <value>can you help me to settle here</value>
+  </data>
+  <data name="Empathi" xml:space="preserve">
+    <value>Empathi</value>
+  </data>
+  <data name="About_Us_Content" xml:space="preserve">
+    <value>This website is offered in 4 languages, including English, Arabic, Burmese, and Dari, so that users could browse the website in their
+                                native language. The website aims to help refugees, who live in Victoria to locate nine different types of support services,
+                                which are provided by Non-Government Organisations (NGOs) including job support, health support, food support, volunteer support, English support,
+                                humanitarian settlement services, accommodation support, drug and alcohol counseling services and legal advice. Refugees can also contact the NGOs
+                                directly in their own language. This helps refugees to locate the NGOs according to the services they provide and to overcome the language barrier
+                                for them to contact the NGOs, so that refugees could get support services to help them integrate in Victoria. The website also provides English voice translation
+                                of several daily sentences, in their own languages. This helps refugees to learn, some simple common English sentences on our website,
+                                which will help them to reduce barrier to communicate in daily lives, especially when communicating with the NGOs.</value>
+  </data>
+  <data name="About_Us_Thanks" xml:space="preserve">
+    <value>The open datasets we used for this website include:</value>
+  </data>
+  <data name="About_Us_Thanks_One" xml:space="preserve">
+    <value>1. Volunteer centres in Victoria</value>
+  </data>
+  <data name="About_Us_Thanks_Three" xml:space="preserve">
+    <value>3. Organisations providing Humanitarian Settlement Services in Victoria</value>
+  </data>
+  <data name="About_Us_Thanks_Two" xml:space="preserve">
+    <value>2. Organisations providing free and cheap life services in Victoria</value>
+  </data>
+  <data name="Hint_Location" xml:space="preserve">
+    <value>E.g. Carnegie Station</value>
+  </data>
+  <data name="Button_Message_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Button_Message_Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Go_Top" xml:space="preserve">
+    <value>Go to Top</value>
+  </data>
+  <data name="Message_Step_One" xml:space="preserve">
+    <value>Step 1: Write your message</value>
+  </data>
+  <data name="Message_Step_Three" xml:space="preserve">
+    <value>Step 3: Press the button</value>
+  </data>
+  <data name="Message_Step_Two" xml:space="preserve">
+    <value>Step 2: Select the language:</value>
+  </data>
+  <data name="Message_Translate" xml:space="preserve">
+    <value>Translate</value>
+  </data>
+  <data name="Message_Translation_Result" xml:space="preserve">
+    <value>Translation result</value>
+  </data>
+  <data name="Send_Your_Message_To" xml:space="preserve">
+    <value>Send your message to:</value>
+  </data>
+  <data name="Your_Location" xml:space="preserve">
+    <value>Your current location</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>Emergency</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Select_Topic" xml:space="preserve">
+    <value>Select Topic</value>
+  </data>
+  <data name="Select_Topic_Slogan" xml:space="preserve">
+    <value>You can choose any of the following topics for conversation!</value>
+  </data>
+</root>

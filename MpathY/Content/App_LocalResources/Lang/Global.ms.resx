@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="About_Us" xml:space="preserve">
+    <value>Tentang kami</value>
+  </data>
+	<data name="Accomodation" xml:space="preserve">
+    <value>Tempat tinggal</value>
+  </data>
+	<data name="All" xml:space="preserve">
+    <value>Semua </value>
+  </data>
+	<data name="Arabic" xml:space="preserve">
+    <value>Bahasa Arab</value>
+  </data>
+	<data name="Burmese" xml:space="preserve">
+    <value>Bahasa Burma</value>
+  </data>
+	<data name="Conversation_Starter" xml:space="preserve">
+    <value>Penerjemah kalimat</value>
+  </data>
+	<data name="Conversation_Starter_Slogan" xml:space="preserve">
+    <value>Mau mulai pembicaraan dengan bahasa Indonesia? Kami bisa bantu!</value>
+  </data>
+	<data name="Counselling" xml:space="preserve">
+    <value>Konseling</value>
+  </data>
+	<data name="Education" xml:space="preserve">
+    <value>Mulailah merencanakan masa depan anak anda</value>
+  </data>
+	<data name="Education1" xml:space="preserve">
+    <value>Kontak Humanitarian Settlement Services</value>
+  </data>
+	<data name="English" xml:space="preserve">
+    <value>Bahasa Inggris</value>
+  </data>
+	<data name="English_Lesson" xml:space="preserve">
+    <value>Les bahasa Inggris</value>
+  </data>
+	<data name="Food" xml:space="preserve">
+    <value>Makanan gratis</value>
+  </data>
+	<data name="Grocery" xml:space="preserve">
+    <value>Dimana letak supermarket?</value>
+  </data>
+	<data name="Health" xml:space="preserve">
+    <value>Kesehatan</value>
+  </data>
+	<data name="Hello" xml:space="preserve">
+    <value>Halo</value>
+  </data>
+	<data name="Home" xml:space="preserve">
+    <value>Beranda</value>
+  </data>
+	<data name="Humanitarian_Settlement" xml:space="preserve">
+    <value>Program Humanitarian Settlement</value>
+  </data>
+	<data name="Indonesia" xml:space="preserve">
+    <value>Bahasa Indonesia</value>
+  </data>
+	<data name="Input_Location" xml:space="preserve">
+    <value>Tulis lokasi anda:</value>
+  </data>
+	<data name="Job" xml:space="preserve">
+    <value>Pekerjaan</value>
+  </data>
+	<data name="Legal_Advice" xml:space="preserve">
+    <value>Bantuan hukum</value>
+  </data>
+	<data name="Looking" xml:space="preserve">
+    <value>Apa yang bisa kami bantu?</value>
+  </data>
+	<data name="Myki" xml:space="preserve">
+    <value>Bagaimana beli tiket?</value>
+  </data>
+	<data name="Pashto" xml:space="preserve">
+    <value>Bahasa Pashto</value>
+  </data>
+	<data name="Search_NGO" xml:space="preserve">
+    <value>Cari organisasi kemanusiaan</value>
+  </data>
+	<data name="Search_NGO_Slogan" xml:space="preserve">
+    <value>Perlu bantuan? Kami bisa bantu anda!</value>
+    <comment>start of section 1</comment>
+  </data>
+	<data name="Start_Conversation" xml:space="preserve">
+    <value>Mulai pembicaraan</value>
+  </data>
+	<data name="Time" xml:space="preserve">
+    <value>Kapan kereta berangkat?</value>
+  </data>
+	<data name="Train" xml:space="preserve">
+    <value>Dimana letak stasiun kereta?</value>
+  </data>
+	<data name="Translation" xml:space="preserve">
+    <value>Terjemahan kalimat</value>
+  </data>
+	<data name="Vaccinate" xml:space="preserve">
+    <value>Sudahkah anda mendapat vaksinasi?</value>
+  </data>
+	<data name="Vaccinate1" xml:space="preserve">
+    <value>Pergilah ke klinik terdekat</value>
+  </data>
+	<data name="Voice_Translation" xml:space="preserve">
+    <value>Penerjemah kalimat</value>
+  </data>
+	<data name="Volunteer" xml:space="preserve">
+    <value>Relawan</value>
+  </data>
+	<data name="Watermark_Location" xml:space="preserve">
+    <value>Tulis lokasi anda disini</value>
+  </data>
+	<data name="Welcome" xml:space="preserve">
+    <value>Selamat Datang</value>
+  </data>
+	<data name="Welcome1" xml:space="preserve">
+    <value>Kami bisa membantu anda mencari organisasi di sekitar Victoria</value>
+  </data>
+	<data name="Button_Clear_Address" xml:space="preserve">
+		<value>Hapus</value>
+	</data>
+	<data name="Button_Clear_Checkbox" xml:space="preserve">
+		<value>Hapus kotak centang</value>
+	</data>
+	<data name="Button_Language_Choice" xml:space="preserve">
+		<value>Pilih Bahasa</value>
+	</data>
+	<data name="Button_Search_Address" xml:space="preserve">
+		<value>Cari lokasi</value>
+	</data>
+	<data name="Heading_Search_NGO" xml:space="preserve">
+		<value>Cari organisasi kemanusiaan</value>
+	</data>
+	<data name="Hint_Red_Pin" xml:space="preserve">
+		<value>Klik pin merah untuk mendapat informasi lebih detil</value>
+	</data>
+	<data name="Hint_Search_Box_Address" xml:space="preserve">
+		<value>Cari lokasi disini:</value>
+	</data>
+	<data name="Hint_Start_Conversation" xml:space="preserve">
+		<value>Pilih salah satu kalimat dibawah ini dan kami bisa terjemahkan ke bahasa Inggris secara tertulis dan lisan</value>
+	</data>
+	<data name="Learn_English" xml:space="preserve">
+		<value>Belajar Bahasa Inggris</value>
+	</data>
+	<data name="Learn_English1" xml:space="preserve">
+		<value>Cari tempat les Bahasa Inggris</value>
+	</data>
+	<data name="Medical_Help" xml:space="preserve">
+		<value>Bantuan medikal</value>
+	</data>
+	<data name="Medical_Help1" xml:space="preserve">
+		<value>Hubungi doktor segera</value>
+	</data>
+	<data name="Need_Job" xml:space="preserve">
+		<value>Perlu pekerjaan?</value>
+	</data>
+	<data name="Need_Job1" xml:space="preserve">
+		<value>Organisasi kemanusiaan dibawah ini bisa membantu anda</value>
+	</data>
+	<data name="Sentence1" xml:space="preserve">
+		<value>Halo</value>
+	</data>
+	<data name="Sentence10" xml:space="preserve">
+		<value>Dimana letak perhentian trem atau halte bus terdekat?</value>
+	</data>
+	<data name="Sentence11" xml:space="preserve">
+		<value>Maaf</value>
+	</data>
+	<data name="Sentence12" xml:space="preserve">
+		<value>Terima kasih</value>
+	</data>
+	<data name="Sentence13" xml:space="preserve">
+		<value>Ini berapa harganya?</value>
+	</data>
+	<data name="Sentence14" xml:space="preserve">
+		<value>Saya tidak mengerti</value>
+	</data>
+	<data name="Sentence15" xml:space="preserve">
+		<value>Saya merasa sakit</value>
+	</data>
+	<data name="Sentence16" xml:space="preserve">
+		<value>Saya butuh tempat untuk tinggal</value>
+	</data>
+	<data name="Sentence17" xml:space="preserve">
+		<value>Saya perlu doktor</value>
+	</data>
+	<data name="Sentence18" xml:space="preserve">
+		<value>Saya perlu makan</value>
+	</data>
+	<data name="Sentence19" xml:space="preserve">
+		<value>Saya perlu pekerjaan</value>
+	</data>
+	<data name="Sentence2" xml:space="preserve">
+		<value>Apa kabar?</value>
+	</data>
+	<data name="Sentence20" xml:space="preserve">
+		<value>Saya perlu psikiater</value>
+	</data>
+	<data name="Sentence21" xml:space="preserve">
+		<value>Saya perlu uang</value>
+	</data>
+	<data name="Sentence22" xml:space="preserve">
+		<value>Saya perlu pembalut</value>
+	</data>
+	<data name="Sentence23" xml:space="preserve">
+		<value>Saya perlu roti</value>
+	</data>
+	<data name="Sentence24" xml:space="preserve">
+		<value>Saya mau belajar bahasa Inggris</value>
+	</data>
+	<data name="Sentence25" xml:space="preserve">
+		<value>Saya mau menelpon seseorang</value>
+	</data>
+	<data name="Sentence26" xml:space="preserve">
+		<value>Saya perlu bantuan untuk visa saya</value>
+	</data>
+	<data name="Sentence27" xml:space="preserve">
+		<value>Saya haus</value>
+	</data>
+	<data name="Sentence28" xml:space="preserve">
+		<value>Apakah makanan ini halal?</value>
+	</data>
+	<data name="Sentence29" xml:space="preserve">
+		<value>Disini sangat dingin</value>
+	</data>
+	<data name="Sentence3" xml:space="preserve">
+		<value>Saya baik baik saja</value>
+	</data>
+	<data name="Sentence30" xml:space="preserve">
+		<value>Sekarang pukul berapa?</value>
+	</data>
+	<data name="Sentence4" xml:space="preserve">
+		<value>Tolong saya</value>
+	</data>
+	<data name="Sentence5" xml:space="preserve">
+		<value>Saya pengungsi</value>
+	</data>
+	<data name="Sentence6" xml:space="preserve">
+		<value>Saya tidak bisa bahasa Inggris</value>
+	</data>
+	<data name="Sentence7" xml:space="preserve">
+		<value>Dimana letak toilet?</value>
+	</data>
+	<data name="Sentence8" xml:space="preserve">
+		<value>Bagaimana cara ke alamat ini?</value>
+	</data>
+	<data name="Sentence9" xml:space="preserve">
+		<value>Dimana letak stasiun kereta?</value>
+	</data>
+	<data name="Indonesian" xml:space="preserve">
+		<value>Bahasa Indonesia</value>
+	</data>
+</root>

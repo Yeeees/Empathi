@@ -1,0 +1,61 @@
+﻿@model MpathY.Models.SearchByTypeReq
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search</h2>
+<div>
+   @using (Html.BeginForm("testView","Org"))
+   { 
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.Monetary_Job) Monetary&Job
+           </label>
+       </div>
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.Volunteer) Volunteer
+           </label>
+       </div>
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.English_Education) English Education
+           </label>
+       </div>
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.Health) Health
+           </label>
+       </div>
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.Accommodation) Accommodation
+           </label>
+       </div>
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.Legal_Service) Legal Service
+           </label>
+       </div>
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.Personal_Care_Food) Personal Care&Food
+           </label>
+       </div>
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.Drug_alcohol_Counselling) Drug&Alcohol Counselling
+           </label>
+       </div>
+       <div class="form-group">
+           <label>
+            @Html.CheckBoxFor(s => s.Humanitarian_Settlement) Humanitarian Settlement
+           </label>
+       </div>
+        <button type="submit" class="btn btn-primary" >Search</button>
+   }
+
+   
+</div>
+

@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Arabic" xml:space="preserve">
+    <value>عربى</value>
+  </data>
+  <data name="Burmese" xml:space="preserve">
+    <value>
+درى</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>پشتیبانی محصولات غذایی</value>
+  </data>
+  <data name="Pashto" xml:space="preserve">
+    <value>မြန်မာ</value>
+  </data>
+  <data name="Volunteer" xml:space="preserve">
+    <value>داوطلب</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>به همدلی خوش آمدید</value>
+  </data>
+  <data name="Learn_English" xml:space="preserve">
+    <value>پشتیبانی انگلیسی</value>
+  </data>
+  <data name="Sentence1" xml:space="preserve">
+    <value>سلام.</value>
+  </data>
+  <data name="Sentence11" xml:space="preserve">
+    <value>ببخشید </value>
+  </data>
+  <data name="Sentence12" xml:space="preserve">
+    <value>تشکر</value>
+  </data>
+  <data name="Sentence4" xml:space="preserve">
+    <value>کمکم کنید .</value>
+  </data>
+  <data name="Button_Close_Popup" xml:space="preserve">
+    <value>بستن</value>
+  </data>
+  <data name="Health" xml:space="preserve">
+    <value>پشتیبانی بهداشت</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>سلام.</value>
+  </data>
+  <data name="Hint_Red_Pin" xml:space="preserve">
+    <value>شما می توانید این پین قرمز در نقشه کلیک کنید برای دیدن اطلاعات بیشتر.</value>
+  </data>
+  <data name="Hint_Start_Conversation" xml:space="preserve">
+    <value>شما می توانید یک جمله از کادر زیر را انتخاب کنید و ما آن را برای شما ترجمه با صدای خارج از قاب در زبان انگلیسی!</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>خانه</value>
+  </data>
+  <data name="Humanitarian_Settlement" xml:space="preserve">
+    <value>حل و فصل بشردوستانه</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>پشتیبانی شغلی</value>
+  </data>
+  <data name="Learn_English1" xml:space="preserve">
+    <value>تعیین محل نزدیکترین خدمات خود را به یادگیری زبان انگلیسی است.</value>
+  </data>
+  <data name="Legal_Advice" xml:space="preserve">
+    <value>مشاوره حقوقی</value>
+  </data>
+  <data name="Looking" xml:space="preserve">
+    <value>دنبال چی میگردی؟</value>
+  </data>
+  <data name="Medical_Help" xml:space="preserve">
+    <value>راهنما پزشکی</value>
+  </data>
+  <data name="Medical_Help1" xml:space="preserve">
+    <value>ما در ارتباط با یک دکتر است.</value>
+  </data>
+  <data name="Need_Job" xml:space="preserve">
+    <value>نیاز شغلی؟</value>
+  </data>
+  <data name="Need_Job1" xml:space="preserve">
+    <value>تماس با نزدیکترین خدمات شما به یک کار.</value>
+  </data>
+  <data name="Search_NGO" xml:space="preserve">
+    <value>خدمات جستجو پشتیبانی</value>
+  </data>
+  <data name="Search_NGO_Slogan" xml:space="preserve">
+    <value>راهنمایی نیاز دارید؟ ما می توانیم به شما کمک کند آنها را پیدا!</value>
+  </data>
+  <data name="Sentence10" xml:space="preserve">
+    <value>نزدیکترین ایستادگا میلی بس کجاست؟</value>
+  </data>
+  <data name="Sentence13" xml:space="preserve">
+    <value>چند قیمت دارد؟</value>
+  </data>
+  <data name="Sentence14" xml:space="preserve">
+    <value>نفهمیدم.</value>
+  </data>
+  <data name="Sentence15" xml:space="preserve">
+    <value>مریض هستم.</value>
+  </data>
+  <data name="Sentence16" xml:space="preserve">
+    <value> برایی زندگی کردن به یک جای نیاز دارم</value>
+  </data>
+  <data name="Sentence17" xml:space="preserve">
+    <value>نیاز به داکتر دارم.</value>
+  </data>
+  <data name="Sentence18" xml:space="preserve">
+    <value> من نیاز به غذا.</value>
+  </data>
+  <data name="Sentence19" xml:space="preserve">
+    <value>نیاز به کار دارم</value>
+  </data>
+  <data name="Sentence2" xml:space="preserve">
+    <value>چطور هستین؟ </value>
+  </data>
+  <data name="Sentence20" xml:space="preserve">
+    <value> نیاز به درمان روانی دارم</value>
+  </data>
+  <data name="Sentence21" xml:space="preserve">
+    <value>نیاز به پول دارم.</value>
+  </data>
+  <data name="Sentence22" xml:space="preserve">
+    <value> من نیاز پد بهداشتی.</value>
+  </data>
+  <data name="Sentence23" xml:space="preserve">
+    <value>من نان نیاز دارم بخرم.</value>
+  </data>
+  <data name="Sentence24" xml:space="preserve">
+    <value> نیاز به آموختن زبان انگلیسی دارم</value>
+  </data>
+  <data name="Sentence25" xml:space="preserve">
+    <value>لازم است یک تلفن کنم</value>
+  </data>
+  <data name="Sentence26" xml:space="preserve">
+    <value> نیاز به تمدید کردن ویزا دارم</value>
+  </data>
+  <data name="Sentence27" xml:space="preserve">
+    <value>نیاز به آب دارم</value>
+  </data>
+  <data name="Sentence28" xml:space="preserve">
+    <value>آیا این حلال است ؟</value>
+  </data>
+  <data name="Sentence29" xml:space="preserve">
+    <value> زیاد سرد است .</value>
+  </data>
+  <data name="Sentence3" xml:space="preserve">
+    <value>من خوب هستم </value>
+  </data>
+  <data name="Sentence30" xml:space="preserve">
+    <value>چه وقت.</value>
+  </data>
+  <data name="Sentence5" xml:space="preserve">
+    <value>من یک پناهنده هستم.</value>
+  </data>
+  <data name="Sentence6" xml:space="preserve">
+    <value>زیاد انگلیسی صحبت کرده نمی توانم.</value>
+  </data>
+  <data name="Sentence7" xml:space="preserve">
+    <value>تشناب کجاست؟</value>
+  </data>
+  <data name="Sentence8" xml:space="preserve">
+    <value>چطورمی توانم به این آدرس بروم؟</value>
+  </data>
+  <data name="Sentence9" xml:space="preserve">
+    <value>نزدیکترین ایستادگا قطار کجاست؟</value>
+  </data>
+  <data name="Start_Conversation" xml:space="preserve">
+    <value>شروع به صحبت</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>قطار چه موقع ترک؟</value>
+  </data>
+  <data name="Train" xml:space="preserve">
+    <value>ایستگاه کجاست؟</value>
+  </data>
+  <data name="Translation" xml:space="preserve">
+    <value>ترجمه</value>
+  </data>
+  <data name="Vaccinate" xml:space="preserve">
+    <value>نیاز به واکسینه؟</value>
+  </data>
+  <data name="Vaccinate1" xml:space="preserve">
+    <value>ما در ارتباط با پشتیبانی پزشکی.</value>
+  </data>
+  <data name="Voice_Translation" xml:space="preserve">
+    <value>ترجمه صوتی</value>
+  </data>
+  <data name="Watermark_Location" xml:space="preserve">
+    <value>شما می توانید یک آدرس در اینجا جستجو کنید:</value>
+  </data>
+  <data name="Welcome1" xml:space="preserve">
+    <value>ما به شما کمک با سازمان حمایت در اطراف ویکتوریا اتصال</value>
+  </data>
+  <data name="Popup_Language_Choice" xml:space="preserve">
+    <value>زبان را انتخاب کنید</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>شماره تلفن:</value>
+  </data>
+  <data name="Sentence31" xml:space="preserve">
+    <value>من نیاز به حمایت مالی</value>
+  </data>
+  <data name="Sentence32" xml:space="preserve">
+    <value>اجاره چقدر است</value>
+  </data>
+  <data name="Sentence33" xml:space="preserve">
+    <value>من می خواهم به یک داوطلب</value>
+  </data>
+  <data name="Sentence34" xml:space="preserve">
+    <value>من نیاز به یک داوطلب به من کمک کند</value>
+  </data>
+  <data name="Sentence35" xml:space="preserve">
+    <value>من نیاز به ترک نوشیدن</value>
+  </data>
+  <data name="Sentence36" xml:space="preserve">
+    <value>من نیاز به ترک مواد مخدر</value>
+  </data>
+  <data name="Sentence37" xml:space="preserve">
+    <value>می توانید به من کمک به حل و فصل در اینجا</value>
+  </data>
+  <data name="About_Us" xml:space="preserve">
+    <value>دربارهی ما</value>
+  </data>
+  <data name="Accomodation" xml:space="preserve">
+    <value>محل اقامت</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>تمام</value>
+  </data>
+  <data name="Button_Clear_Address" xml:space="preserve">
+    <value>پاک کردن</value>
+  </data>
+  <data name="Button_Clear_Checkbox" xml:space="preserve">
+    <value>جعبه انتخاب را پاک</value>
+  </data>
+  <data name="Button_Language_Choice" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+  <data name="Button_Search_Address" xml:space="preserve">
+    <value>جستجو</value>
+  </data>
+  <data name="Conversation_Starter" xml:space="preserve">
+    <value>مکالمه شروع</value>
+  </data>
+  <data name="Conversation_Starter_Slogan" xml:space="preserve">
+    <value>برای شروع مکالمه زبان خود را بدانید؟ ما می تواند کمک به شما!</value>
+  </data>
+  <data name="Counselling" xml:space="preserve">
+    <value>مواد مخدر و الکل مشاوره</value>
+  </data>
+  <data name="English_Lesson" xml:space="preserve">
+    <value>پشتیبانی فارسی</value>
+  </data>
+  <data name="Grocery" xml:space="preserve">
+    <value>سوپرمارکت کجاست؟</value>
+  </data>
+  <data name="Heading_Search_NGO" xml:space="preserve">
+    <value>
+خدمات جستجو</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>آدرس:</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>ایمیل:</value>
+  </data>
+  <data name="Email_Send" xml:space="preserve">
+    <value>ارسال ایمیل</value>
+  </data>
+  <data name="Get_There" xml:space="preserve">
+    <value>چگونه می توانید</value>
+  </data>
+  <data name="Empathi" xml:space="preserve">
+    <value>یکدلی</value>
+  </data>
+  <data name="Hint_Search_Address" xml:space="preserve">
+    <value>برایی یافتن یک آدرس میتوانید جستجو کنید. </value>
+  </data>
+  <data name="About_Us_Content" xml:space="preserve">
+    <value>این وب سایت در 4 زبان از جمله انگلیسی، عربی، برمه، و دری ارائه شده، به طوری که کاربران می تواند وب سایت در فهرست خود
+                                زبان مادری. هدف این وب سایت برای کمک به پناهندگان، که در ویکتوریا زندگی می کنند برای قرار نه انواع مختلف از خدمات پشتیبانی،
+                                که توسط سازمان های غیر دولتی (NGO ها) از جمله پشتیبانی کار، پشتیبانی سلامت، پشتیبانی غذا، پشتیبانی داوطلب، پشتیبانی زبان انگلیسی ارائه شده،
+                                خدمات استقرار انسان دوستانه، پشتیبانی اقامت، خدمات مواد مخدر و الکل مشاوره و مشاوره حقوقی. پناهندگان همچنین می توانید سازمان های غیر دولتی تماس
+                                به طور مستقیم در زبان خود. این کمک می کند تا پناهندگان برای قرار دادن سازمان های غیر دولتی با توجه به خدماتی که ارائه و برای غلبه بر موانع زبان
+                                برای آنها برای تماس با سازمان های غیر دولتی، به طوری که پناهندگان می تواند خدمات پشتیبانی برای کمک به آنها در ویکتوریا در اختیار دارد. این وب سایت همچنین ترجمه صوتی انگلیسی فراهم می کند
+                                از چند جمله روزانه، به زبان خود. این کمک می کند تا پناهندگان به یادگیری، برخی از احکام مشترک زبان انگلیسی ساده در وب سایت ما،
+                                کمک خواهد کرد که آنها را به کاهش مانع برای برقراری ارتباط در زندگی روزمره، به ویژه هنگام برقراری ارتباط با سازمان های غیر دولتی.</value>
+  </data>
+  <data name="About_Us_Thanks" xml:space="preserve">
+    <value>مجموعه داده های باز ما برای این وب سایت مورد استفاده عبارتند از:</value>
+  </data>
+  <data name="About_Us_Thanks_One" xml:space="preserve">
+    <value>1. مراکز داوطلب در ویکتوریا</value>
+  </data>
+  <data name="About_Us_Thanks_Three" xml:space="preserve">
+    <value>3. سازمانهای ارائه دهنده خدمات استقرار بشردوستانه در ویکتوریا</value>
+  </data>
+  <data name="About_Us_Thanks_Two" xml:space="preserve">
+    <value>2. سازمانهای ارائه دهنده خدمات زندگی آزاد و ارزان در ویکتوریا</value>
+  </data>
+  <data name="Hint_Location" xml:space="preserve">
+    <value>ایستگاه کارنگی</value>
+  </data>
+  <data name="Button_Message_Close" xml:space="preserve">
+    <value>بستن</value>
+  </data>
+  <data name="Button_Message_Send" xml:space="preserve">
+    <value>ارسال</value>
+  </data>
+  <data name="Go_Top" xml:space="preserve">
+    <value>رفتن به بالای</value>
+  </data>
+  <data name="Message_Step_One" xml:space="preserve">
+    <value>مرحله 1: نوشتن پیام خود را</value>
+  </data>
+  <data name="Message_Step_Three" xml:space="preserve">
+    <value>مرحله 3: دکمه</value>
+  </data>
+  <data name="Message_Step_Two" xml:space="preserve">
+    <value>مرحله 2: انتخاب زبان:</value>
+  </data>
+  <data name="Message_Translate" xml:space="preserve">
+    <value>ترجمه کردن</value>
+  </data>
+  <data name="Message_Translation_Result" xml:space="preserve">
+    <value>نتیجه ترجمه</value>
+  </data>
+  <data name="Send_Your_Message_To" xml:space="preserve">
+    <value>ارسال پیام خود را به</value>
+  </data>
+  <data name="Your_Location" xml:space="preserve">
+    <value>مکان فعلی شما</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>جهت</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>اضطراری</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>جملات معمول</value>
+  </data>
+  <data name="Select_Topic" xml:space="preserve">
+    <value>انتخاب موضوع</value>
+  </data>
+  <data name="Select_Topic_Slogan" xml:space="preserve">
+    <value>شما می توانید هر یک از موضوعات زیر را برای گفتگو را انتخاب کنید!</value>
+  </data>
+</root>

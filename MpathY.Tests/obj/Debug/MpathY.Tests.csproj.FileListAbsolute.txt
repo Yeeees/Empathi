@@ -1,0 +1,72 @@
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.Tests.dll.config
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.Tests.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.Tests.pdb
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.pdb
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.csprojResolveAssemblyReference.cache
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.pdb
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\EntityFramework.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\EntityFramework.xml
+C:\Users\YLY\Desktop\MpathY\MpathY\MpathY.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.Tests.dll.config
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.Tests.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.Tests.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\MpathY.dll.config
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\oxy\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 1.5\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 1.5\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 1.5\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 1.5 basic\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 1.5 basic\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 1.5 basic\MpathY\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.pdb
+C:\Users\YLY\Desktop\Version 1.8\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.csprojResolveAssemblyReference.cache
+C:\Users\YLY\Desktop\Version 1.8\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 2.5\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 2.5\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.dll
+E:\桌面\Version 2.9\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.csprojResolveAssemblyReference.cache
+E:\桌面\Version 2.9\MpathY\MpathY.Tests\obj\Debug\MpathY.Tests.dll

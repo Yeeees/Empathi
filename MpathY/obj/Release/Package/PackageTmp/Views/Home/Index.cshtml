@@ -1,0 +1,1619 @@
+﻿@model MpathY.Models.wholeOrgList
+@{
+    ViewBag.Title = "Empathi";
+    Layout = "~/Views/Shared/_mytemplate.cshtml";
+}
+<header>
+    <style>
+        nav ul {
+            height: 200px;
+            width: 100%;
+        }
+
+        nav ul {
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        .navbar-right li a {
+            text-transform:capitalize;
+            font-size:16px;
+        }
+
+            #sentences {
+            display:block;
+            height:500px;
+            border: 1px solid black;
+            line-height: 50px;
+            list-style: none;
+            padding: 0;
+        }
+
+        #sentences > li {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #sentences > li:hover {
+            display: block;
+            background-color: #028FCC;
+            color: white;
+        }
+
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            display: none;
+            background-color: dimgrey;
+        }
+
+            .form-group input[type="checkbox"] + .btn-group > label,
+            .form-group input[type="radio"] + .btn-group > label {
+                white-space: normal;
+            }
+
+                .form-group input[type="checkbox"] + .btn-group > label.btn-default,
+                .form-group input[type="radio"] + .btn-group > label.btn-default {
+                    color: #333;
+                    background-color: #fff;
+                    border-color: #ccc;
+                }
+
+                .form-group input[type="checkbox"] + .btn-group > label.btn-primary,
+                .form-group input[type="radio"] + .btn-group > label.btn-primary {
+                    color: #fff;
+                    background-color: #428bca;
+                    border-color: #357ebd;
+                }
+
+                .form-group input[type="checkbox"] + .btn-group > label.btn-success,
+                .form-group input[type="radio"] + .btn-group > label.btn-success {
+                    color: #fff;
+                    background-color: #5cb85c;
+                    border-color: #4cae4c;
+                }
+
+                .form-group input[type="checkbox"] + .btn-group > label.btn-info,
+                .form-group input[type="radio"] + .btn-group > label.btn-info {
+                    color: #fff;
+                    background-color: #5bc0de;
+                    border-color: #46b8da;
+                }
+
+                .form-group input[type="checkbox"] + .btn-group > label.btn-warning,
+                .form-group input[type="radio"] + .btn-group > label.btn-warning {
+                    color: #fff;
+                    background-color: #f0ad4e;
+                    border-color: #eea236;
+                }
+
+                .form-group input[type="checkbox"] + .btn-group > label.btn-danger,
+                .form-group input[type="radio"] + .btn-group > label.btn-danger {
+                    color: #fff;
+                    background-color: #d9534f;
+                    border-color: #d43f3a;
+                }
+
+                .form-group input[type="checkbox"] + .btn-group > label.btn-link,
+                .form-group input[type="radio"] + .btn-group > label.btn-link {
+                    font-weight: normal;
+                    color: #428bca;
+                    border-radius: 0;
+                }
+
+                .form-group input[type="radio"] + .btn-group > label span:first-child,
+                .form-group input[type="checkbox"] + .btn-group > label span:first-child {
+                    display: none;
+                }
+
+                    .form-group input[type="radio"] + .btn-group > label span:first-child + span,
+                    .form-group input[type="checkbox"] + .btn-group > label span:first-child + span {
+                        display: inline-block;
+                    }
+
+            .form-group input[type="radio"]:checked + .btn-group > label span:first-child,
+            .form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+                display: inline-block;
+            }
+
+                .form-group input[type="radio"]:checked + .btn-group > label span:first-child + span,
+                .form-group input[type="checkbox"]:checked + .btn-group > label span:first-child + span {
+                    display: none;
+                }
+
+            .form-group input[type="checkbox"] + .btn-group > label span[class*="fa-"],
+            .form-group input[type="radio"] + .btn-group > label span[class*="fa-"] {
+                width: 15px;
+                float: left;
+                margin: 4px 0 2px -2px;
+            }
+
+            .form-group input[type="checkbox"] + .btn-group > label span.content,
+            .form-group input[type="radio"] + .btn-group > label span.content {
+                margin-left: 10px;
+                font-size: 18px;
+            }
+
+            .form-group input[type="checkbox"] + .btn-group > label:hover,
+            .form-group input[type="radio"] + .btn-group > label:hover {
+                margin-left: 10px;
+                font-size: 18px;
+                background-color: #028FCC;
+                color: white;
+            }
+
+            .form-group input[type="checkbox"] + .btn-group:hover,
+            .form-group input[type="radio"] + .btn-group:hover {
+                margin-left: 10px;
+                font-size: 18px;
+                background-color: dimgrey;
+                color: white;
+            }
+
+        #popup {
+            display: none;
+            position: relative;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 50px 2px #000;
+            z-index:101;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown button:hover {
+            background-color: rgba(0,0,0,.2);
+            color: white;
+        }
+
+        .navbar-right li button {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #028FCC;
+            border: none;
+            position: relative;
+            bottom: 4px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 99;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            background-color: white;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: grey;
+            color: white;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar-right li div div a {
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .navbar-right li div div a:hover {
+            color: white;
+            background-color: #028FCC;
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .popup-position {
+            display:none;
+            position:fixed;
+            top:0;
+            left:0;
+            background-color: rgba(0,0,0,0.7);
+            width:100%;
+            height:100%;
+            z-index:100;
+        }
+
+
+        #popup-wrapper{
+            width:500px;
+            margin: 70px auto;
+            text-align: left;
+        }
+        #popup-container{
+
+            background-color:white;
+            padding:20px;
+            border-radius:4px;
+        }
+
+        .fluid-element-wrapper {
+            height: auto;
+            padding-bottom: 0;
+        }
+
+        @@media (max-width: 1000px) {
+            .content-to-hide a img {
+                display: none;
+            }
+
+            .drop-this {
+                position: relative;
+                top: 500px;
+            }
+
+            @@media (max-width:799px) {
+                .fluid-element-wrapper {
+                    height: 60%;
+                }
+
+                .fluid-caption {
+                    position: relative;
+                    bottom: 40px;
+                    right: 20px;
+                }
+
+                .fluid-caption1 {
+                    position: relative;
+                    bottom: 100px;
+                    right: 20px;
+                }
+
+                .fluid-adjustment {
+                    position: relative;
+                    left: 5px;
+                }
+
+                .fluid-control {
+                    position: relative;
+                    bottom: 220px;
+                }
+
+                #map{
+                    width:100%;
+                }
+
+                #conversation{
+                    position:relative;
+                    bottom:300px;
+                }
+
+                .drop-this {
+                    position: relative;
+                    top: 100px;
+                }
+            }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</header>
+
+<body style="height:100%">
+    <div class="notranslate">
+        <!--.preloader-->
+        <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+        <!--/.preloader-->
+        <header id="home">
+            <div class="main-nav" style="position:fixed; left:0px; right:0px; z-index:99;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#home">
+                            <h1><img style="height:45px" class="img-responsive" src="@Url.Content("~/Content/mytemplate/")/images/logo.png"></h1>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="scroll active"><a href="#home">@MpathY.Content.App_LocalResources.Lang.Global.Home</a></li>
+                            <li class="scroll"><a href="#services">@MpathY.Content.App_LocalResources.Lang.Global.Search_NGO</a></li>
+                            <li class="scroll"><a href="#conversation">@MpathY.Content.App_LocalResources.Lang.Global.Start_Conversation</a></li>
+                            <li class="scroll"><a href="#about-us">@MpathY.Content.App_LocalResources.Lang.Global.About_Us</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button>@MpathY.Content.App_LocalResources.Lang.Global.Button_Language_Choice  &nbsp; <img src="/Content/mytemplate/images/globe.png" /></button>
+                                    <div class="dropdown-content" style="position:fixed;">
+                                        @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.English, "ChangeLanguage", "Language", new { SelectedLanguage = "en" }, new { @class = "btn btn-default" })
+                                        @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Arabic, "ChangeLanguage", "Language", new { SelectedLanguage = "ar-sa" }, new { @class = "btn btn-default" })
+                                        @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Pashto, "ChangeLanguage", "Language", new { SelectedLanguage = "ps" }, new { @class = "btn btn-default" })
+                                        @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Burmese, "ChangeLanguage", "Language", new { SelectedLanguage = "th" }, new { @class = "btn btn-default" })
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div><!--/#main-nav-->
+            <div id="home-slider" class="carousel carousel-fade" data-ride="carousel" style="z-index:0; height:850px;">
+
+                <div style="height:850px;">
+                    <div class="carousel-inner fluid-element-wrapper">
+
+
+                        <div class="item active fluid-element-wrapper" style="background-image: url(/Content/mytemplate/images/welcometoempathi.png)">
+                            <div class="caption fluid-caption">
+                                <h1 class="animated fadeInLeftBig fluid-caption fluid-adjustment" style="text-transform:none">@MpathY.Content.App_LocalResources.Lang.Global.Welcome</h1>
+                                <p class="animated fadeInRightBig fluid-caption fluid-adjustment" style="text-transform:capitalize">@MpathY.Content.App_LocalResources.Lang.Global.Welcome1</p>
+                                <a data-scroll class="btn btn-start animated fadeInUpBig fluid-caption" href="#services">@MpathY.Content.App_LocalResources.Lang.Global.Search_NGO</a>
+                                <a id="convoanchor" data-scroll class="btn btn-start animated fadeInUpBig fluid-caption" href="#conversation">@MpathY.Content.App_LocalResources.Lang.Global.Start_Conversation</a>
+                            </div>
+                        </div>
+                        <div class="item fluid-element-wrapper" style="background-image: url(/Content/mytemplate/images/slider/english-1705196_1280.jpg)">
+                            <div class="caption fluid-caption">
+                                <h1 class="animated fadeInLeftBig fluid-caption fluid-adjustment" style="text-transform:capitalize">@MpathY.Content.App_LocalResources.Lang.Global.Learn_English</h1>
+                                <p class="animated fadeInRightBig fluid-caption fluid-adjustment" style="text-transform:capitalize">@MpathY.Content.App_LocalResources.Lang.Global.Learn_English1</p>
+                                <a data-scroll class="btn btn-start animated fadeInUpBig fluid-caption" href="#services">@MpathY.Content.App_LocalResources.Lang.Global.Search_NGO</a>
+                                <a data-scroll class="btn btn-start animated fadeInUpBig fluid-caption" href="#conversation">@MpathY.Content.App_LocalResources.Lang.Global.Start_Conversation</a>
+
+                            </div>
+                        </div>
+                        <div class="item fluid-element-wrapper" style="background-image: url(/Content/mytemplate/images/slider/building-joy-planning-plans.jpg)">
+                            <div class="caption fluid-caption">
+                                <h1 class="animated fadeInLeftBig fluid-caption fluid-caption fluid-adjustment" style="text-transform:capitalize">@MpathY.Content.App_LocalResources.Lang.Global.Need_Job</h1>
+                                <p class="animated fadeInRightBig fluid-caption fluid-adjustment" style="text-transform:capitalize">@MpathY.Content.App_LocalResources.Lang.Global.Need_Job1</p>
+                                <a data-scroll class="btn btn-start animated fadeInUpBig fluid-caption" href="#services">@MpathY.Content.App_LocalResources.Lang.Global.Search_NGO</a>
+                                <a data-scroll class="btn btn-start animated fadeInUpBig fluid-caption" href="#conversation">@MpathY.Content.App_LocalResources.Lang.Global.Start_Conversation</a>
+                            </div>
+                        </div>
+
+                        <div class="item fluid-element-wrapper" style="background-image: url(/Content/mytemplate/images/slider/stethoscope-doctor-medical-blood-pressure-161489.jpg)">
+                            <div class="caption fluid-caption">
+                                <h1 class="animated fadeInLeftBig fluid-caption fluid-adjustment" style="text-transform:capitalize">@MpathY.Content.App_LocalResources.Lang.Global.Medical_Help</h1>
+                                <p class="animated fadeInRightBig fluid-caption fluid-adjustment" style="text-transform:capitalize">@MpathY.Content.App_LocalResources.Lang.Global.Medical_Help1</p>
+                                <a data-scroll class="btn btn-start animated fadeInUpBig fluid-caption" href="#services">@MpathY.Content.App_LocalResources.Lang.Global.Search_NGO</a>
+                                <a data-scroll class="btn btn-start animated fadeInUpBig fluid-caption" href="#conversation">@MpathY.Content.App_LocalResources.Lang.Global.Start_Conversation</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
+            </div><!--/#home-slider-->
+        </header><!--/#home-->
+        <section class="fluid-caption1 fluid-adjustment" id="services" style="padding-bottom: 0px;">
+            <div class="fluid-caption1 fluid-adjustment" style="padding-left:10px;">
+                <div class="row fluid-caption1 fluid-adjustment">
+                    <div class="text-center col-lg-2 fluid-caption1">
+                        <h3>@MpathY.Content.App_LocalResources.Lang.Global.Hint_Search_Address</h3>
+
+                        <input id="locationform" type="text" name="search" placeholder="@MpathY.Content.App_LocalResources.Lang.Global.Hint_Location">
+                        <script>
+                            $(document).ready(function () {
+                                $('#locationform').keypress(function (e) {
+                                    if (e.keyCode == 13)
+                                        $('#newLocBtn').click();
+                                });
+                            });
+                        </script>
+                        <script>
+                            var pac_input = document.getElementById('locationform');
+
+                            (function pacSelectFirst(input) {
+                                // store the original event binding function
+                                var _addEventListener = (input.addEventListener) ? input.addEventListener : input.attachEvent;
+
+                                function addEventListenerWrapper(type, listener) {
+                                    // Simulate a 'down arrow' keypress on hitting 'return' when no pac suggestion is selected,
+                                    // and then trigger the original listener.
+
+                                    if (type == "keydown") {
+                                        var orig_listener = listener;
+                                        listener = function (event) {
+                                            var suggestion_selected = $(".pac-item-selected").length > 0;
+                                            if (event.which == 13 && !suggestion_selected) {
+                                                var simulated_downarrow = $.Event("keydown", { keyCode: 40, which: 40 })
+                                                orig_listener.apply(input, [simulated_downarrow]);
+                                            }
+
+                                            orig_listener.apply(input, [event]);
+                                        };
+                                    }
+
+                                    // add the modified listener
+                                    _addEventListener.apply(input, [type, listener]);
+                                }
+
+                                if (input.addEventListener)
+                                    input.addEventListener = addEventListenerWrapper;
+                                else if (input.attachEvent)
+                                    input.attachEvent = addEventListenerWrapper;
+
+                            })(pac_input);
+
+
+                            $(function () {
+                                var autocomplete = new google.maps.places.Autocomplete(pac_input);
+                            });
+                        </script>
+
+                        <div style="position:relative; top:20px;">
+                            <button id="newLocBtn" style="width:160px; position:relative; top:5px;" class="btn btn-info" onclick="addNewLoc(locationform.value);">@MpathY.Content.App_LocalResources.Lang.Global.Button_Search_Address</button>
+
+                        </div>
+                        <br>
+                        <p>&nbsp;</p>
+                        <h3>@MpathY.Content.App_LocalResources.Lang.Global.Looking</h3>
+                        <div class="form-group row">
+                            <div class="col-sm-10" id="cck">
+
+
+                                <div class="col">
+                                    <input type="checkbox" name="Monetary_and_Job" id="Monetary and Job" autocomplete="off" checked onclick="filterMarkers(name); changeVoiceCheckbox('Convo Monetary and Job'); " rel="job" />
+                                    <div class="btn-group">
+                                        <label for="Monetary and Job" class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Job</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <input type="checkbox" name="English_education" id="English education" autocomplete="off" checked onclick="filterMarkers(name); changeVoiceCheckbox('Convo English education');" rel="englesson" />
+                                    <div class="btn-group">
+                                        <label for="English education" class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.English_Lesson</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="Health" id="Health" autocomplete="off" checked onclick="filterMarkers(name); changeVoiceCheckbox('Convo Health');  " rel="health" />
+                                    <div class="btn-group">
+                                        <label for="Health" class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Health</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="Accommodation" id="Accommodation" autocomplete="off" checked onclick="filterMarkers(name); changeVoiceCheckbox('Convo Accommodation');" rel="accommodation" />
+                                    <div class="btn-group">
+                                        <label for="Accommodation" class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Accomodation</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="general_Legal_service" id="general Legal service" checked autocomplete="off" onclick="filterMarkers(name); changeVoiceCheckbox('Convo general Legal service');" rel="legal" />
+                                    <div class="btn-group">
+                                        <label for="general Legal service" class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Legal_Advice</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="Personal_care_and_Food" id="Personal care and Food" checked autocomplete="off" onclick="filterMarkers(name); changeVoiceCheckbox('Convo Personal care_and Food') ;" rel="food" />
+                                    <div class="btn-group">
+                                        <label for="Personal care and Food" class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Food</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="Volunteer" id="Volunteer" autocomplete="off" checked onclick="filterMarkers(name);changeVoiceCheckbox('Convo Volunteer');" rel="volunteer" />
+                                    <div class="btn-group">
+                                        <label for="Volunteer" class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Volunteer</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="drug_and_alcohol_counselling" id="drug and alcohol counselling" autocomplete="off" checked onclick="filterMarkers(name); changeVoiceCheckbox('Convo drug and alcohol counselling');" rel="counselling" />
+                                    <div class="btn-group">
+                                        <label for="drug and alcohol counselling" class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Counselling</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="Humanitarian_Settlement" id="Humanitarian Settlement " autocomplete="off" checked onclick="filterMarkers(name); changeVoiceCheckbox('Convo Humanitarian Settlement'); " rel="settlement" /><!--getCategory('input[name=Convo_Humanitarian_Settlement]', 'input[name=Humanitarian_Settlement]'-->
+                                    <div class="btn-group">
+                                        <label for="Humanitarian Settlement " class="btn btn-default">
+                                            <span class="fa fa-check-square-o fa-lg"></span>
+                                            <span class="fa fa-square-o fa-lg"></span>
+                                            <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Humanitarian_Settlement</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div>
+                            <button id="uncheckAll" style="width:160px;" class="btn btn-info" onclick="uncheckAll('cck');mapUncheck()">@MpathY.Content.App_LocalResources.Lang.Global.Button_Clear_Checkbox</button>
+                        </div>
+                        <script>
+                            mapUncheck = function () {
+                                for (i = 0; i < markers1.length; i++) {
+                                    marker2 = gmarkers1[i];
+
+                                        marker2.setVisible(false);
+                                    
+                                }
+
+                            }
+
+                            //two checkbox related
+                            changeVoiceCheckbox = function (checkName) {
+                                document.getElementById(checkName).checked = true;
+                                var ul = document.getElementById("sentences");
+                                var li = ul.getElementsByTagName('li');
+                                var checkLabel;
+                                switch (checkName) {
+                                    case "Convo Humanitarian Settlement":
+                                        checkLabel = "settlement";
+                                        break;
+                                    case "Convo drug and alcohol counselling":
+                                        checkLabel = "counselling";
+                                        break;
+                                    case "Convo Volunteer":
+                                        checkLabel = "volunteer";
+                                        break;
+                                    case "Convo Personal care and Food":
+                                        checkLabel = "food";
+                                        break;
+                                    case "Convo general Legal service":
+                                        checkLabel = "legal";
+                                        break;
+                                    case "Convo Accommodation":
+                                        checkLabel = "accommodation";
+                                        break;
+                                    case "Convo Health":
+                                        checkLabel = "health";
+                                        break;
+                                    case "Convo English education":
+                                        checkLabel = "englesson";
+                                        break;
+                                    case "Convo Monetary and Job":
+                                        checkLabel = "job";
+                                        break;
+
+                                }
+
+
+                                // Loop through all list items, and hide those who don't match the search query
+                                for (i = 0; i < li.length; i++) {
+                                    var a = li[i].className;
+
+                                    if (a.indexOf(checkLabel) !== -1 && document.getElementById(checkName).checked == true) {
+                                        console.log("class name :" + a + "  " + checkLabel);
+                                        li[i].style.display = "";
+                                    } else {
+                                        li[i].style.display = "none";
+                                    }
+                                }
+
+                            }
+                        </script>
+                    </div>
+                    <div class="text-center col-lg-1">
+                       
+                    </div>
+                        <!-- Display Popup-Email -->
+                        <div class="text-center col-lg-9" style="height:730px">
+
+
+                            <section id="map" style="height:100%; width:90%;">
+
+
+                                <div id="map-canvas" style="height:400px;width:400px;">
+
+
+
+                                    <script>
+                                    // Note: This example requires that you consent to location sharing when
+                                    // prompted by your browser. If you see the error "The Geolocation service
+                                    // failed.", it means you probably did not give permission for the browser to
+                                    // locate you.
+                                    var gmarkers1 = [];
+                                    var markers1 = [];
+
+                                    var markers2 = JSON.parse('@Html.Raw(Json.Encode(Model.GetConnection()))');
+                                    for (var i = 0; i < markers2.length; i++)//markers2.length
+                                    {
+                                        var org = markers2[i];
+                                        //org.servicesLine += " All";
+                                        var arrayItem = [org.Name, org.Address + ',Victoria,Australia', org.servicesLine, org.Latitude, org.Longitude, org.Email, org.Phone_Number, org.Suburb, org.Postcode, org.Services];
+                                        markers1.push(arrayItem);
+                                        //console.log(i);
+                                        //console.log('ad:'+arrayItem);
+                                    }
+                                    //console.log('markers2'+markers2);
+
+                                    function initMap()//gai
+                                    {
+
+
+                                        var urlStringOrg = 'https://www.google.com.au/maps/dir/current+location/';
+                                        var map = new google.maps.Map(document.getElementById('map'),
+                                            {
+                                                center: { lat: -37.814678, lng: 144.955506 },
+                                                zoom: 12,
+                                                streetViewControl: true
+                                            });
+                                        map.setOptions({ minZoom: 11, maxZoom: 17 });
+                                        var infoWindow = new google.maps.InfoWindow({ map: map });
+
+
+
+
+                                        for (i = 0; i < markers1.length; i++) {
+                                            addMarker(markers1[i]);
+                                        }
+                                        function addMarker(marker) {
+                                            var address = marker[1];
+                                            var pso = new google.maps.Geocoder();
+
+                                            //add javascript in infobox
+                                            var s = document.createElement("script");
+                                            s.type = "text/javascript";
+                                            s.src = "Scripts/infobox.js";
+                                            $("head").append(s);
+
+
+                                            var cor = '-37.814678, 144.955506';
+                                            //console.log('pos2:' + pos);
+                                            var category = marker[2];
+                                            var title = marker[0];
+                                            //= new google.maps.LatLng(marker[2], marker[3]);
+                                            //console.log('pos:' + pos);
+                                            var pos = new google.maps.LatLng(marker[3], marker[4]);
+                                            var Email = marker[5];
+                                            var Phone_Number = marker[6];
+                                            var Suburb = marker[7];
+                                            var Postcode = marker[8];
+                                            var Services = marker[9];
+
+
+
+                                            var content = marker[1];
+
+                                            marker1 = new google.maps.Marker({
+                                                title: title,
+                                                position: pos,
+                                                category: category,
+                                                content: title,
+                                                map: map
+                                            });
+
+                                            var urlString;
+                                            //var urlString = 'https://www.google.com.au/maps/dir/carnegie station/'
+                                            if (document.getElementById('locationform').value == "") {
+                                                urlString = 'https://www.google.com.au/maps/dir/current+location/';
+                                            }
+                                            else {
+                                                var urlString = 'https://www.google.com.au/maps/dir/' + document.getElementById('locationform').value + "/";
+                                            }
+                                            var contentString = '<div id="content">' +
+                                            '<div id="siteNotice">' +
+                                                '<h4>' + title + '<h4>' +
+                                                '<p>' + '@MpathY.Content.App_LocalResources.Lang.Global.Address ' + address + ',' + Suburb + ', VIC, ' + Postcode + '<p>' +
+                                                '<p>' + '<a href="' + urlStringOrg + address + ' ' + Suburb + '"' + ' target="_blank">' + '@MpathY.Content.App_LocalResources.Lang.Global.Get_There' + '</a>' + '<p>' +
+                                                //'<button id="SearchDir" onclick="searchDir('+ urlString + address + ' ' + Suburb +')" >How can I get there?</button>'+
+                                                '<p>' + '@MpathY.Content.App_LocalResources.Lang.Global.Phone_Number ' + Phone_Number + '<p>' +
+                                                '<p>' + '@MpathY.Content.App_LocalResources.Lang.Global.Email ' + '<label id ="EmailAdd">' + Email + '</label>' + '<p>' +
+                                                '<button class="btn btn-info" onclick="myFunction()">@MpathY.Content.App_LocalResources.Lang.Global.Email_Send</button> &nbsp;' +
+                                                '<a href="#conversation"><button class="btn btn-info">@MpathY.Content.App_LocalResources.Lang.Global.Start_Conversation</button></a>' +
+
+                                            '</div>' +
+                                            '</div>';
+                                            //document.getElementById("EmailAdd").innerHTML
+                                            gmailFunction = function () {
+                                                var link = "https://mail.google.com/mail/?view=cm&fs=1&to=" + document.getElementById("EmailAdd").innerHTML;
+                                                link = link + "&su=test&body=test";
+                                                window.open(link);
+                                            }
+
+                                            myFunction = function () {
+                                                console.log('myFunction1');
+                                                var email = document.getElementById("EmailAdd").innerHTML;
+                                                console.log(email);
+                                                if (email == null || typeof (email) == "null" || !email || email.length == 0) {
+                                                    alert("Sorry, This organisation hasn't provide E-mail address yet.");
+                                                }
+                                                else {
+                                                    console.log('myFunction2');
+
+                                                    var e = document.getElementById('popup-email1');
+                                                    if (e.style.display == 'block') {
+                                                        e.style.display = 'none';
+                                                        console.log('none');
+
+                                                    }
+                                                    else {
+                                                        var ngoEmail = document.getElementById('ngoEmailAddr');
+                                                        ngoEmail.innerHTML = document.getElementById("EmailAdd").innerHTML;
+                                                        e.style.display = 'block';
+                                                        console.log('block');
+                                                    }
+
+                                                }
+                                            }
+
+
+                                            searchDir = function (Addr) {
+                                                var urlString;
+                                                //var urlString = 'https://www.google.com.au/maps/dir/carnegie station/'
+                                                if (document.getElementById('locationform').value == "") {
+                                                    urlString = 'https://www.google.com.au/maps/dir/current+location/';
+                                                }
+                                                else {
+                                                    var urlString = 'https://www.google.com.au/maps/dir/' + document.getElementById('locationform').value + "/";
+                                                }
+                                                window.location.href = urlString + Addr;
+                                            }
+
+                                            var infowindow = new google.maps.InfoWindow({
+                                                content: contentString
+                                            });
+
+                                            google.maps.event.addListener(marker1, "click", (function (marker1) {
+                                                return function () {
+                                                    google.maps.event.trigger(map, "closeAllInfoboxes");
+                                                    console.log('Gmarker 1 gets pushed');
+                                                    //infowindow.setContent(title);
+                                                    infowindow.open(map, marker1);
+                                                    map.panTo(this.getPosition());
+                                                    map.setZoom(15);
+                                                }
+                                            })(marker1));
+
+                                            google.maps.event.addListener(map, 'closeAllInfoboxes', function () {
+                                                infowindow.close();
+                                            });
+                                            google.maps.event.addListener(map, 'click', function () {
+                                                if (infowindow) {
+                                                    infowindow.close();
+                                                }
+                                            });
+
+
+
+
+
+                                            //console.log('marker1:' + pos);
+
+
+
+
+                                            gmarkers1.push(marker1);
+                                            // Marker click listener
+
+
+
+
+
+                                        }
+
+
+                                        addNewLoc = function (newAddr) {
+                                            if (newAddr.length == 0) {
+                                                alert('Cannot search empty address..');
+                                            }
+                                            else {
+
+                                                for (i = 0; i < gmarkers1.length; i++) {
+                                                    userMarker = gmarkers1[i];
+                                                    if (userMarker.category.includes("NewLoc")) {
+                                                        console.log('find NewLoc');
+                                                        userMarker.setVisible(false);
+                                                    }
+                                                }
+
+                                                console.log('addNewLoc is running');
+                                                var cat = "NewLoc";
+                                                var newAddress = newAddr + ",Victoria,Australia";
+                                                var newPso = new google.maps.Geocoder();
+                                                newPso.geocode({ 'address': newAddress }, function (results, status) {
+                                                    if (status == 'OK') {
+                                                        console.log('geocode is running' + newAddr);
+                                                        newMarker = new google.maps.Marker({
+                                                            position: results[0].geometry.location,
+                                                            title: "New Location",
+                                                            map: map,
+                                                            category: cat,
+                                                            icon: 'http://maps.google.com/mapfiles/ms/icons/arrow.png'
+
+                                                        });
+                                                        google.maps.event.addListener(newMarker, "click", (function (newMarker) {
+                                                            return function () {
+                                                                console.log('Gmarker 1 gets pushed');
+                                                                //infowindow.setContent(title);
+                                                                infowindow.open(map, marker1);
+                                                                map.panTo(this.getPosition());
+                                                                map.setCenter(this.getPosition());
+                                                                map.setZoom(15);
+                                                            }
+                                                        })(newMarker));
+                                                        gmarkers1.push(newMarker);
+                                                        map.panTo(results[0].geometry.location);
+                                                        //document.getElementById('locationform').disabled = true;
+                                                        urlStringOrg = 'https://www.google.com.au/maps/dir/' + newAddress + "/";
+                                                    }
+                                                    else {
+                                                        alert("Sorry, cannot find this address...");
+                                                    }
+
+                                                })
+                                            }
+                                        }
+
+                                       
+
+                                        /**
+                                         * Function to filter markers by category
+                                         */
+
+                                        filterMarkers = function (category) {
+
+                                            var checkList = [];
+                                            console.log("1");
+
+                                            if (document.getElementById('Monetary and Job').checked == true) {
+                                                checkList.push("Monetary and Job");
+                                            }
+                                            if (document.getElementById('Volunteer').checked == true) {
+                                                checkList.push("Volunteer");
+                                            }
+                                            if (document.getElementById('English education').checked == true) {
+                                                checkList.push("English education");
+                                            }
+                                            if (document.getElementById('Health').checked == true) {
+                                                checkList.push("Health");
+                                            }
+                                            if (document.getElementById('Accommodation').checked == true) {
+                                                checkList.push("Accommodation");
+                                            }
+                                            if (document.getElementById('general Legal service').checked == true) {
+                                                checkList.push("general Legal service");
+                                            }
+                                            if (document.getElementById('Personal care and Food').checked == true) {
+                                                checkList.push("Personal care and Food");
+                                            }
+                                            if (document.getElementById('drug and alcohol counselling').checked == true) {
+                                                checkList.push("drug and alcohol counselling");
+                                            }
+                                            if (document.getElementById('Humanitarian Settlement ').checked == true) {
+                                                checkList.push("Humanitarian Settlement ");
+                                            }
+
+                                            map.setZoom(12);
+
+                                           
+                                            for (i = 0; i < markers1.length; i++) {
+                                                marker = gmarkers1[i];
+                                                var flag = false;
+                                                // If is same category or category not picked
+                                                for (j = 0; j < checkList.length; j++) {
+                                                    if (marker.category.includes(checkList[j]) || category.length === 0) {
+                                                        flag = true;
+                                                    }
+                                                    else {
+
+
+                                                    }
+
+                                                }
+                                                if (flag == true) {
+                                                    marker.setVisible(true);
+                                                    console.log("3");
+                                                }
+
+
+                                                    // Categories don't match
+                                                else {
+
+                                                    marker.setVisible(false);
+                                                }
+                                            }
+
+                                        }
+
+                                        // Try HTML5 geolocation.
+                                        if (navigator.geolocation) {
+                                            navigator.geolocation.getCurrentPosition(function (position) {
+                                                var pos = {
+                                                    lat: position.coords.latitude,
+                                                    lng: position.coords.longitude
+                                                };
+                                                currMarker = new google.maps.Marker({
+                                                    position: pos,
+                                                    title: "Current Location",
+                                                    map: map,
+                                                    
+                                                    icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
+                                                    
+
+                                                });
+                                                infoWindow.setPosition(pos);
+                                                infoWindow.setContent('@MpathY.Content.App_LocalResources.Lang.Global.Your_Location');
+                                                map.setCenter(pos);
+
+                                            }, function () {
+                                                //handleLocationError(true, infoWindow, map.getCenter());
+                                            });
+
+                                            var geocoder = new google.maps.Geocoder();
+
+                                            document.getElementById('type').addEventListener('click', function () {
+                                                geocodeAddress(geocoder, map);
+                                            });
+
+                                        } else {
+                                            // Browser doesn't support Geolocation
+                                            handleLocationError(false, infoWindow, map.getCenter());
+                                        }
+                                    }
+
+                                    function init() {
+                                        var input = document.getElementById('locationform');
+                                        var autocomplete = new google.maps.places.Autocomplete(input);
+                                    }
+
+                                    google.maps.event.addDomListener(window, 'load', init);
+
+                                    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                                        infoWindow.setPosition(pos);
+                                        infoWindow.setContent(browserHasGeolocation ?
+                                                              'Error: The Geolocation service failed.' :
+                                                              'Error: Your browser doesn\'t support geolocation.');
+                                    }
+
+                                    function geocodeAddress(geocoder, resultsMap) {
+                                        var address = document.getElementById('address').value;
+                                        geocoder.geocode({ 'address': address }, function (results, status) {
+                                            if (status === google.maps.GeocoderStatus.OK) {
+                                                resultsMap.setCenter(results[0].geometry.location);
+                                                var marker = new google.maps.Marker({
+                                                    map: resultsMap,
+                                                    position: results[0].geometry.location
+                                                });
+                                            } else {
+                                                alert('Geocode was not successful for the following reason: ' + status);
+                                            }
+                                        });
+                                    }
+
+
+
+                                    </script>
+                                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTUmfdp8rKmY-ugjSB74zn55CZUMsJuik&callback=initMap"
+                                            async defer></script>
+                                </div>
+                            </section><!--/#map-->
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="conversation">
+            <div class="container fluid-element-wrapper" style="padding-bottom:0px;">
+                <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="row">
+                        <div class="text-center col-sm-8 col-sm-offset-2">
+                            <h2>@MpathY.Content.App_LocalResources.Lang.Global.Conversation_Starter</h2>
+                            <p>@MpathY.Content.App_LocalResources.Lang.Global.Conversation_Starter_Slogan</p>
+                            <div style="position:relative; top:20px;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="padding-left:10px;">
+                <div class="row">
+                    <div class="text-center" style="padding-left:10px;">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-3 tags">
+                                <h2 style="text-align:center">@MpathY.Content.App_LocalResources.Lang.Global.Select_Topic</h2>
+                                <p>@MpathY.Content.App_LocalResources.Lang.Global.Select_Topic_Slogan</p>
+                                <div class="form-group row">
+                                    <div class="col-sm-10" id="cck1">
+
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo General" id="Convo General" autocomplete="off" rel="general" />
+                                            <div class="btn-group">
+                                                <label for="Convo General" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.General</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo Emergency" id="Convo Emergency" autocomplete="off" rel="emergency" />
+                                            <div class="btn-group">
+                                                <label for="Convo Emergency" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Emergency</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo Direction" id="Convo Direction" autocomplete="off" rel="direction" />
+                                            <div class="btn-group">
+                                                <label for="Convo Direction" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Direction</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_Monetary_and_Job" id="Convo Monetary and Job" autocomplete="off" rel="job" />
+                                            <div class="btn-group">
+                                                <label for="Convo Monetary and Job" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Job</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_English_education" id="Convo English education" autocomplete="off" rel="englesson" />
+                                            <div class="btn-group">
+                                                <label for="Convo English education" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.English_Lesson</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_Health" id="Convo Health" autocomplete="off" rel="health" />
+                                            <div class="btn-group">
+                                                <label for="Convo Health" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Health</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_Accommodation" id="Convo Accommodation" autocomplete="off" rel="accommodation" />
+                                            <div class="btn-group">
+                                                <label for="Convo Accommodation" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Accomodation</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_general_Legal_service" id="Convo general Legal service" autocomplete="off" rel="legal" />
+                                            <div class="btn-group">
+                                                <label for="Convo general Legal service" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Legal_Advice</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_Personal_care_and_Food" id="Convo Personal care and Food" autocomplete="off" rel="food" />
+                                            <div class="btn-group">
+                                                <label for="Convo Personal care and Food" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Food</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_Volunteer" id="Convo Volunteer" autocomplete="off" rel="volunteer" />
+                                            <div class="btn-group">
+                                                <label for="Convo Volunteer" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Volunteer</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_drug_and_alcohol_counselling" id="Convo drug and alcohol counselling" autocomplete="off" rel="counselling" />
+                                            <div class="btn-group">
+                                                <label for="Convo drug and alcohol counselling" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Counselling</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_Humanitarian_Settlement" id="Convo Humanitarian Settlement" autocomplete="off" rel="settlement" />
+                                            <div class="btn-group">
+                                                <label for="Convo Humanitarian Settlement" class="btn btn-default">
+                                                    <span class="fa fa-check-square-o fa-lg"></span>
+                                                    <span class="fa fa-square-o fa-lg"></span>
+                                                    <span class="content">@MpathY.Content.App_LocalResources.Lang.Global.Humanitarian_Settlement</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" name="Convo_All" id="Convo_All" autocomplete="off" rel="all" style="visibility:hidden;" />
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <button id="uncheckAll" style="width:160px; position:relative; right:30px;" class="btn btn-info" onclick="uncheckAll('cck1')">@MpathY.Content.App_LocalResources.Lang.Global.Button_Clear_Checkbox</button>
+                                </div>
+                            </div>
+                            <div id="content-list" class="col-lg-1 col-sm-1 content-to-hide" style="display: inline-block">
+                                <a style="position:relative; top:300px;"><img src="/Content/mytemplate/images/397349990.jpg" /></a>
+                            </div>
+                            <div class="col-lg-4 col-sm-4">
+                                <h2 style="text-align:center">@MpathY.Content.App_LocalResources.Lang.Global.Start_Conversation</h2>
+                                <p>@MpathY.Content.App_LocalResources.Lang.Global.Hint_Start_Conversation</p>
+                                <nav>
+                                    <ul id="sentences">
+                                        <li id="Hello" class="general all" onclick="voiceTranslation(id)"> @MpathY.Content.App_LocalResources.Lang.Global.Sentence1</li>
+                                        <li id="How_are_you" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence2</li>
+                                        <li id="I_am_good" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence3</li>
+                                        <li id="help_me" class="general emergency health all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence4</li>
+                                        <li id="I_am_a_refugee" class="general legal health food all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence5</li>
+                                        <li id="I_dont_speak_english_very_well" class="general englesson all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence6</li>
+                                        <li id="where_is_the_toilet" class="general emergency all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence7</li>
+                                        <li id="How to get to this address" class="general direction all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence8</li>
+                                        <li id="where_is_the_nearest_train_station" class="general direction all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence9</li>
+                                        <li id="where_is_the_nearest_tram_or_bus_stop" class="general direction all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence10</li>
+                                        <li id="sorry" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence11</li>
+                                        <li id="thank_you" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence12</li>
+                                        <li id="How_much_does_this_cost" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence13</li>
+                                        <li id="I_cant_understand" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence14</li>
+                                        <li id="i_feel_sick" class="emergency health all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence15</li>
+                                        <li id="I_need_a_place_to_stay" class="accommodation all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence16</li>
+                                        <li id="I_need_doctor" class="emergency health all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence17</li>
+                                        <li id="I_need_food" class="food all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence18</li>
+                                        <li id="I_need_job" class="job all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence19</li>
+                                        <li id="I_need_mental_health_support" class="health all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence20</li>
+                                        <li id="I_need_money" class="job all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence21</li>
+                                        <li id="I_need_sanitary_pad" class="general emergency all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence22</li>
+                                        <li id="I_need_to_buy_bread" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence23</li>
+                                        <li id="I_need_to_learn_english" class="englesson all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence24</li>
+                                        <li id="I_need_to_make_a_phone_call" class="general legal all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence25</li>
+                                        <li id="I_need_visa_support" class="legal all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence26</li>
+                                        <li id="I_need_water" class="food all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence27</li>
+                                        <li id="is_this_halal" class="food all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence28</li>
+                                        <li id="it_is_very_cold" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence29</li>
+                                        <li id="what_time" class="general all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence30</li>
+                                        <li id="I_need_financial_support" class="general job all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence31</li>
+                                        <li id="How_much_is_the_rent" class="general accommodation all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence32</li>
+                                        <li id="I_want_to_be_a_volunteer" class="general volunteer all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence33</li>
+                                        <li id="I_need_a_volunteer_to_help_me" class="general volunteer all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence34</li>
+                                        <li id="I_want_to_quit_drinking" class="general counselling all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence35</li>
+                                        <li id="I_want_to_quit_taking_drugs" class="general counselling all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence36</li>
+                                        <li id="can_you_help_me_to_settle_here" class="general settlement all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence37</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div id="content-list" class="col-lg-1 col-sm-1 content-to-hide" style="display: inline-block">
+                                <a style="position:relative; top:300px;"><img src="/Content/mytemplate/images/397349990.jpg" /></a>
+                            </div>
+                            <div id="content-list" class="col-lg-3 col-sm-3">
+                                <h2 style="text-align:center">@MpathY.Content.App_LocalResources.Lang.Global.Translation</h2>
+                                <div id="content_1" style="text-align: center; font-size: 30px;position:relative; top:250px;" class="notranslate"><b id='translateResult' class="notranslate"></b><audio id="sound" preload="auto"></audio></div>
+                            </div>
+                            <div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+
+                voiceTranslation = function (sentence) {
+
+                    var id = sentence;
+                    //var content = document.getElementById(sentence).innerHTML;
+                    var content;
+                    switch (id) {
+                        case "Hello":
+                            content = "Hello";
+                            break;
+                        case "How_are_you":
+                            content = "How are you?";
+                            break;
+                        case "I_am_good":
+                            content = "I am good";
+                            break;
+                        case "help_me":
+                            content = "Help me!";
+                            break;
+                        case "I_am_a_refugee":
+                            content = "I am a refugee";
+                            break;
+                        case "I_dont_speak_english_very_well":
+                            content = "I don't speak English very well";
+                            break;
+                        case "where_is_the_toilet":
+                            content = "Where is the toilet";
+                            break;
+                        case "How to get to this address":
+                            content = "How to get to this address?";
+                            break;
+                        case "where_is_the_nearest_train_station":
+                            content = "Where is the nearest train station?";
+                            break;
+                        case "where_is_the_nearest_tram_or_bus_stop":
+                            content = "where is the nearest tram or bus stop?";
+                            break;
+                        case "sorry":
+                            content = "Sorry";
+                            break;
+                        case "thank_you":
+                            content = "Thank you";
+                            break;
+                        case "How_much_does_this_cost":
+                            content = "How much does this cost?";
+                            break;
+                        case "I_cant_understand":
+                            content = "I can't understand";
+                            break;
+                        case "i_feel_sick":
+                            content = "I feel sick";
+                            break;
+                        case "I_need_a_place_to_stay":
+                            content = "I need a place to stay";
+                            break;
+                        case "I_need_doctor":
+                            content = "I need doctor";
+                            break;
+                        case "I_need_food":
+                            content = "I need food";
+                            break;
+                        case "I_need_job":
+                            content = "I need job";
+                            break;
+                        case "I_need_mental_health_support":
+                            content = "I need mental health support";
+                            break;
+                        case "I_need_money":
+                            content = "I need money";
+                            break;
+                        case "I_need_sanitary_pad":
+                            content = "I need sanitary pad";
+                            break;
+                        case "I_need_to_buy_bread":
+                            content = "I need to buy bread";
+                            break;
+                        case "I_need_to_learn_english":
+                            content = "I need to learn english";
+                            break;
+                        case "I_need_to_make_a_phone_call":
+                            content = "I need to make a phone call";
+                            break;
+                        case "I_need_visa_support":
+                            content = "I need visa support";
+                            break;
+                        case "I_need_water":
+                            content = "I need water";
+                            break;
+                        case "is_this_halal":
+                            content = "Is this Halal?";
+                            break;
+                        case "it_is_very_cold":
+                            content = "It is very cold";
+                            break;
+                        case "what_time":
+                            content = "What time?";
+                            break;
+                        case "I_want_to_be_a_volunteer":
+                            content = "I want to be a volunteer";
+                            break;
+                        case "I_want_to_quit_taking_drugs":
+                            content = "I need to quit drug";
+                            break;
+                        case "I_want_to_quit_drinking":
+                            content = "I need to quit drinking";
+                            break;
+                        case "I_need_financial_support":
+                            content = "I need financial support";
+                            break;
+                        case "I_need_a_volunteer_to_help_me":
+                            content = "I need a volunteer to help me";
+                            break;
+                        case "How_much_is_the_rent":
+                            content = "How much is the rent";
+                            break;
+                        case "can_you_help_me_to_settle_here":
+                            content = "can you help me to settle here";
+                            break;
+
+                    }
+
+
+
+                    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,ar,my,ps" }, 'google_translate_element');
+                    //document.getElementById("translateImg").src = '@Url.Content("~/translation_image/hello.jpg")';
+                    document.getElementById("translateResult").innerHTML = content;
+                    document.getElementById("sound").src = '@Url.Content("~/translation_sound/")' + id + ".mp3";
+                    document.getElementById("sound").play();
+
+
+                }
+
+                    </script>
+                </div>
+            </div>
+
+
+        </section><!--/#services-->
+
+        <section id="about-us" class="parallax drop-this">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center col-sm-8 col-sm-offset-2">
+                        <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <h2>@MpathY.Content.App_LocalResources.Lang.Global.About_Us</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-6">
+                        <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <p>
+                                @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Content
+                            </p>
+                            <p>
+                                @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Thanks  <br>
+                                @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Thanks_One <br>
+                                http://data.gov.au/dataset/volunteering-centres-services-and-groups-victoria/resource/c9be70dc-a029-4bdc-b2f9-ec5f5f780d0c <br>
+                                @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Thanks_Two <br>
+                                https://data.melbourne.vic.gov.au/People-Events/Helping-Out/jduy-94rf <br>
+                                @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Thanks_Three <br>
+                                https://www.dss.gov.au/our-responsibilities/settlement-and-multicultural-affairs/programs-policy/settlement-services/settlement-services-locator <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/#about-us-->
+        <div>
+            <script type="text/javascript">
+                $(function () {
+
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 150) {
+                            $('.back-to-top').fadeIn(100);
+                        } else {
+                            $('.back-to-top').fadeOut(100);
+                        }
+                    });
+
+
+                    $('.back-to-top').click(function (event) {
+                        event.preventDefault();
+                        $('html, body').animate({ scrollTop: 0 }, 500);
+                    })
+                })
+
+                function uncheckAll(divid) {
+                    $('#' + divid + ' :checkbox:enabled').prop('checked', false);
+                }
+            </script>
+            <a href="#" class="back-to-top" style="display: inline;">@MpathY.Content.App_LocalResources.Lang.Global.Go_Top</a>
+        </div>
+        <div id="popup" class="popup panel panel-primary" style="position:fixed; bottom:900px;">
+            <form action="" class="text-center" style="background-color:white; padding-top:10px;">
+                <h3>@MpathY.Content.App_LocalResources.Lang.Global.Popup_Language_Choice</h3>
+                @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.English, "ChangeLanguage", "Language", new { SelectedLanguage = "en" }, new { @class = "btn btn-default" })<br>
+                @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Arabic, "ChangeLanguage", "Language", new { SelectedLanguage = "ar-sa" }, new { @class = "btn btn-default" })<br>
+                @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Pashto, "ChangeLanguage", "Language", new { SelectedLanguage = "ps" }, new { @class = "btn btn-default" })<br>
+                @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Burmese, "ChangeLanguage", "Language", new { SelectedLanguage = "th" }, new { @class = "btn btn-default" })
+            </form>
+
+            <!-- Now this is the button which closes the popup-->
+            <div class="panel-footer">
+                <button id="close" class="btn btn-lg btn-primary">@MpathY.Content.App_LocalResources.Lang.Global.Button_Close_Popup</button>
+            </div>
+
+            <!-- and finally we close the POPUP FRAME-->
+            <!-- everything on it will show up within the popup so you can add more things not just an image -->
+        </div>
+    </div><!--notranslate ends-->
+
+    <div id="popup-email1" class="popup-position">
+        <!-- Popup Div Starts Here -->
+        <div id="popup-wrapper">
+            
+            <div id="popup-container">
+            <br />
+            <br />
+            
+                <!--<form method="post" action="@Url.Action("Form", "Home")">-->
+                  
+                  <!--<form action="mailto:" method="post" enctype="text/plain">-->
+                <div class="notranslate">
+                    @MpathY.Content.App_LocalResources.Lang.Global.Send_Your_Message_To
+                    <label id="ngoEmailAddr"></label><br />
+                    @MpathY.Content.App_LocalResources.Lang.Global.Message_Step_One<br>
+                    <textarea name="userMsg" id="userMsg" style="width:250px;height:150px;"></textarea><br />
+
+                    <br />
+                    <br />
+
+                    @MpathY.Content.App_LocalResources.Lang.Global.Message_Step_Two
+                </div><!--Notransalte div ends-->
+                <div id="google_translate_element"></div>
+
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ includedLanguages: "en" }, 'google_translate_element');
+                    }
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+            
+            <br />
+                <div class="notranslate">
+                    @MpathY.Content.App_LocalResources.Lang.Global.Message_Step_Three <button onclick="transFunction()">@MpathY.Content.App_LocalResources.Lang.Global.Message_Translate</button><br />
+                </div><!--Notransalte div ends-->
+                <label id="transResult">@MpathY.Content.App_LocalResources.Lang.Global.Message_Translation_Result</label>
+                <div class="notranslate">
+                    <br />
+                    <button type="submit" class="btn btn-primary" onclick="sendGmailFunction()">@MpathY.Content.App_LocalResources.Lang.Global.Button_Message_Send</button>
+                    <span style="padding-left:38px;"></span>
+                    <button onclick="myFunction()" class="btn btn-primary" type="reset">@MpathY.Content.App_LocalResources.Lang.Global.Button_Message_Close</button><br />
+                </div><!--Notransalte div ends-->
+                
+            <script>
+                transFunction = function () {
+                    var n1 = document.getElementById("userMsg");
+                    var n2 = document.getElementById("transResult");
+                    n2.textContent = n1.value;
+                }
+                sendGmailFunction = function () {
+
+                    var link = "https://mail.google.com/mail/?view=cm&fs=1&to=" + document.getElementById("EmailAdd").innerHTML;
+                    var transResult = document.getElementById("transResult").textContent;
+                    
+                    var content1 = document.getElementById("userMsg").value;
+                    link = link + "&su=" + "A message from a refugee" + "&body=" + "The original message is:%0A%0A" + content1 + "%0A%0A-----Translated by Google-----%0A%0A" + transResult;
+                    window.open(link);
+                }
+
+                sendEmail = function () {
+                    var email = document.getElementById("ngoEmailAddr").textContent;
+                    var subject = document.getElementById("userSubject");
+
+                    window.location.href = "mailto:" + email + "?subject=" + subject;
+                }
+            </script>
+                
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-590ac0bc5d4950a4"></script> 
+                
+            </div><!-- Popup-container ends here -->
+        </div><!-- popup-wrapper ends here-->
+        
+    </div>
+
+    <div id="popupoverlay" class="popup-position"></div>
+
+
+    <script>
+                $(document).ready(function () {
+                    if (localStorage.getItem('popState') != 'shown') {
+                    //select the POPUP FRAME and show it
+                    $("#popupoverlay").hide().fadeIn(1000);
+                    $("#popup").hide().fadeIn(1000);
+                     localStorage.setItem('popState','shown')
+                      }
+
+                    //close the POPUP if the button with id="close" is clicked
+                    $("#close").on("click", function (e) {
+                        e.preventDefault();
+                        $("#popupoverlay").fadeOut(1000);
+                        $("#popup").fadeOut(1000);
+                    });
+                });
+    </script>
+    <script>
+        $(document).ready(function () {
+            //$('#sentences > li').hide();
+
+            $('div.tags').find('input:checkbox').on('click', function () {
+                $('#sentences > li').hide();
+                $('div.tags').find('input:checked').each(function () {
+                    $('#sentences > li.' + $(this).attr('rel')).show();
+                });
+            });
+        });
+    </script>
+    <script>
+        getCategory = function (x, y) {
+            if ($(y).is(':checked')) {
+                $(x).attr('checked', true);
+            } else {
+                $(x).attr('checked', false);
+            }
+        }
+    </script>
+
+
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/jquery.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/jquery.inview.min.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/wow.min.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/mousescroll.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/smoothscroll.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/lightbox.min.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/mytemplate/")js/main.js"></script>
+
+</body>
+
+
+
+
+
+
+

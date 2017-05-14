@@ -1,0 +1,23 @@
+﻿@model MpathY.ViewModels.ClassificationOrgModel
+@{
+    ViewBag.Title = "ClassOrgView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    var className = Model.Type.Count > 1 ? "popular" : null;
+}
+
+<h2 class="@className">@Model.Org.Name</h2>
+@if(Model.Type.Count == 0)
+{
+    <text>No type for this Org</text>
+}
+else 
+{ 
+<ul>
+    @foreach (var type in Model.Type)
+    {
+        <li>@type.Name</li>
+    }
+</ul>
+}

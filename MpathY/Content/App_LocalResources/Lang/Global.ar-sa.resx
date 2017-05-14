@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Arabic" xml:space="preserve">
+    <value>عربى</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>غذاء على الحصول</value>
+  </data>
+  <data name="Volunteer" xml:space="preserve">
+    <value>تطوعية أعمال</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>أهلا بك</value>
+  </data>
+  <data name="Burmese" xml:space="preserve">
+    <value>درى</value>
+  </data>
+  <data name="Learn_English" xml:space="preserve">
+    <value> تعلم اللغة الإنجليزية</value>
+  </data>
+  <data name="Pashto" xml:space="preserve">
+    <value>မြန်မာ</value>
+  </data>
+  <data name="Sentence1" xml:space="preserve">
+    <value> مرحبا</value>
+  </data>
+  <data name="Sentence11" xml:space="preserve">
+    <value>آسفة/آسف</value>
+  </data>
+  <data name="Sentence12" xml:space="preserve">
+    <value> شكرا</value>
+  </data>
+  <data name="Sentence4" xml:space="preserve">
+    <value>ساعدني</value>
+  </data>
+  <data name="Button_Close_Popup" xml:space="preserve">
+    <value>أغلق</value>
+  </data>
+  <data name="Empathi" xml:space="preserve">
+    <value> إمباثي (تعاطف) </value>
+  </data>
+  <data name="About_Us" xml:space="preserve">
+    <value>تعرف علينا</value>
+  </data>
+  <data name="Accomodation" xml:space="preserve">
+    <value>السكن علي الحصول</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+  <data name="Button_Clear_Address" xml:space="preserve">
+    <value>واضح</value>
+  </data>
+  <data name="Button_Clear_Checkbox" xml:space="preserve">
+    <value>واضح</value>
+  </data>
+  <data name="Button_Language_Choice" xml:space="preserve">
+    <value>لغة</value>
+  </data>
+  <data name="Button_Search_Address" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="Conversation_Starter" xml:space="preserve">
+    <value>بدء محادثة</value>
+  </data>
+  <data name="Conversation_Starter_Slogan" xml:space="preserve">
+    <value>هل تريد بدء محادثة بلغتك؟ يمكننا مساعدتك!</value>
+  </data>
+  <data name="Counselling" xml:space="preserve">
+    <value>المخدرات و بالكحول متعلقة استشارات علي الحصول</value>
+  </data>
+  <data name="English_Lesson" xml:space="preserve">
+    <value>الإنجليزية اللغة </value>
+  </data>
+  <data name="Grocery" xml:space="preserve">
+    <value>أين السوبر ماركت؟</value>
+  </data>
+  <data name="Heading_Search_NGO" xml:space="preserve">
+    <value>خدمات دعم البحث</value>
+  </data>
+  <data name="Health" xml:space="preserve">
+    <value>الصحي الدعم علي الحصول</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>مرحبا</value>
+  </data>
+  <data name="Hint_Red_Pin" xml:space="preserve">
+    <value>يمكنك النقر فوق هذه الدبابيس الحمراء في الخريطة لعرض مزيد من المعلومات.</value>
+  </data>
+  <data name="Hint_Start_Conversation" xml:space="preserve">
+    <value>!بالإنجليزية صوتيا لك نترجمها سوف و الأسفل الصندوق من جملة اختيار يمكنك
+</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+  </data>
+  <data name="Humanitarian_Settlement" xml:space="preserve">
+    <value>إنساني استقرار علي الحصول</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>وظيفة علي الحصول</value>
+  </data>
+  <data name="Learn_English1" xml:space="preserve">
+    <value>البحث عن أقرب مكان لتعلم اللغة الإنجليزية.</value>
+  </data>
+  <data name="Legal_Advice" xml:space="preserve">
+    <value>قانونية استشارات على الحصول</value>
+  </data>
+  <data name="Looking" xml:space="preserve">
+    <value>؟عن تبحث  ماذا </value>
+  </data>
+  <data name="Medical_Help" xml:space="preserve">
+    <value>  مساعدات طبية</value>
+  </data>
+  <data name="Medical_Help1" xml:space="preserve">
+    <value>اتصل بطبيب.</value>
+  </data>
+  <data name="Need_Job" xml:space="preserve">
+    <value>  هل تحتاج لعمل؟</value>
+  </data>
+  <data name="Need_Job1" xml:space="preserve">
+    <value>البحث عن أقرب مكان للحصول علي وظيفة.</value>
+  </data>
+  <data name="Search_NGO" xml:space="preserve">
+    <value>خدمات الدعم البحث عن     </value>
+  </data>
+  <data name="Search_NGO_Slogan" xml:space="preserve">
+    <value>هل تبحث عن مساعدة؟ يمكننا مساعدتك في العثور عليها!</value>
+  </data>
+  <data name="Sentence10" xml:space="preserve">
+    <value> ؟ترام أو أوتوبيس محطة أقرب أين</value>
+  </data>
+  <data name="Sentence13" xml:space="preserve">
+    <value> ؟هذا ثمن  يبلغ  كم</value>
+  </data>
+  <data name="Sentence14" xml:space="preserve">
+    <value>.أفهم لا</value>
+  </data>
+  <data name="Sentence15" xml:space="preserve">
+    <value>.بالتعب أشعر</value>
+  </data>
+  <data name="Sentence16" xml:space="preserve">
+    <value> .للسكن مكان أحتاج</value>
+  </data>
+  <data name="Sentence17" xml:space="preserve">
+    <value>.لطبيب أحتاج</value>
+  </data>
+  <data name="Sentence18" xml:space="preserve">
+    <value> . طعام أحتاج </value>
+  </data>
+  <data name="Sentence19" xml:space="preserve">
+    <value>.وظيفة أحتاج</value>
+  </data>
+  <data name="Sentence2" xml:space="preserve">
+    <value>؟حالك كيف</value>
+  </data>
+  <data name="Sentence20" xml:space="preserve">
+    <value>.النفسية  الصحة لخدمات أحتاج</value>
+  </data>
+  <data name="Sentence21" xml:space="preserve">
+    <value>  .للمال أحتاج</value>
+  </data>
+  <data name="Sentence22" xml:space="preserve">
+    <value> .صحية لفوطة أحتاج</value>
+  </data>
+  <data name="Sentence23" xml:space="preserve">
+    <value>.الخبز لشراء أحتاج</value>
+  </data>
+  <data name="Sentence24" xml:space="preserve">
+    <value> .الإنجليزية اللغة تعلم أحتاج</value>
+  </data>
+  <data name="Sentence25" xml:space="preserve">
+    <value> .هاتفي إتصال لإجراء أحتاج</value>
+  </data>
+  <data name="Sentence26" xml:space="preserve">
+    <value>.التأشيرة في مساعدة أحتاج  </value>
+  </data>
+  <data name="Sentence27" xml:space="preserve">
+    <value>.ماء أحتاج</value>
+  </data>
+  <data name="Sentence28" xml:space="preserve">
+    <value>؟حلال هذا هل</value>
+  </data>
+  <data name="Sentence29" xml:space="preserve">
+    <value>.البرودة شديد الجو</value>
+  </data>
+  <data name="Sentence3" xml:space="preserve">
+    <value>.بخير أنا</value>
+  </data>
+  <data name="Sentence30" xml:space="preserve">
+    <value> ؟الساعة كم</value>
+  </data>
+  <data name="Sentence5" xml:space="preserve">
+    <value>.لاجئ أنا</value>
+  </data>
+  <data name="Sentence6" xml:space="preserve">
+    <value>.كثيرا الإنجليزية أتحدث  لا</value>
+  </data>
+  <data name="Sentence7" xml:space="preserve">
+    <value>؟الحمام أين</value>
+  </data>
+  <data name="Sentence8" xml:space="preserve">
+    <value>؟العنوان لهذا أصل كيف</value>
+  </data>
+  <data name="Sentence9" xml:space="preserve">
+    <value>	؟قطار محطة أقرب أين</value>
+  </data>
+  <data name="Start_Conversation" xml:space="preserve">
+    <value>بدء محادثة</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>متى يغادر القطار؟</value>
+  </data>
+  <data name="Train" xml:space="preserve">
+    <value>أين هي المحطة؟</value>
+  </data>
+  <data name="Translation" xml:space="preserve">
+    <value>ترجمة</value>
+  </data>
+  <data name="Vaccinate" xml:space="preserve">
+    <value>هل تحتاج إلى تلقيح؟</value>
+  </data>
+  <data name="Vaccinate1" xml:space="preserve">
+    <value>إتصل بأحد أفراد المساعدة الطبية.</value>
+  </data>
+  <data name="Voice_Translation" xml:space="preserve">
+    <value>الصوتية الترجمة</value>
+  </data>
+  <data name="Watermark_Location" xml:space="preserve">
+    <value>:هنا عنوان عن البحث يمكنك </value>
+  </data>
+  <data name="Welcome1" xml:space="preserve">
+    <value>نحن نساعدك على التواصل مع منظمات الدعم حول فيكتوريا
+</value>
+  </data>
+  <data name="Popup_Language_Choice" xml:space="preserve">
+    <value>اللغة إختر</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>عنوان:</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني:</value>
+  </data>
+  <data name="Email_Send" xml:space="preserve">
+    <value>ارسل بريد الكتروني</value>
+  </data>
+  <data name="Get_There" xml:space="preserve">
+    <value>كيفية الوصول الى هناك؟</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>رقم الهاتف:</value>
+  </data>
+  <data name="Sentence31" xml:space="preserve">
+    <value>أحتاج إلى دعم مالي</value>
+  </data>
+  <data name="Sentence32" xml:space="preserve">
+    <value>كم هو الإيجار</value>
+  </data>
+  <data name="Sentence33" xml:space="preserve">
+    <value>أريد أن أكون متطوعا</value>
+  </data>
+  <data name="Sentence34" xml:space="preserve">
+    <value>أحتاج إلى متطوع لمساعدتي</value>
+  </data>
+  <data name="Sentence35" xml:space="preserve">
+    <value>أنا بحاجة إلى الإقلاع عن الشرب</value>
+  </data>
+  <data name="Sentence36" xml:space="preserve">
+    <value>أنا بحاجة إلى الإقلاع عن المخدرات</value>
+  </data>
+  <data name="Sentence37" xml:space="preserve">
+    <value>يمكنك مساعدتي لتسوية هنا</value>
+  </data>
+  <data name="Hint_Search_Address" xml:space="preserve">
+    <value>يمكنك البحث عن عنوان هنا:</value>
+  </data>
+  <data name="About_Us_Content" xml:space="preserve">
+    <value>يتم تقديم هذا الموقع في 4 لغات، بما في ذلك الإنجليزية والعربية والبورمية والداري، بحيث يمكن للمستخدمين تصفح الموقع في
+                                اللغة الأم. ويهدف الموقع إلى مساعدة اللاجئين الذين يعيشون في فيكتوريا على تحديد تسعة أنواع مختلفة من خدمات الدعم،
+                                التي تقدمها المنظمات غير الحكومية بما في ذلك الدعم الوظيفي، والدعم الصحي، والدعم الغذائي، ودعم المتطوعين، والدعم باللغة الإنجليزية،
+                                وخدمات الاستيطان الإنساني، ودعم الإقامة، وخدمات المشورة في مجال المخدرات والكحول، والمشورة القانونية. ويمكن للاجئين أيضا الاتصال بالمنظمات غير الحكومية
+                                مباشرة بلغتهم. وهذا يساعد اللاجئين على تحديد المنظمات غير الحكومية وفقا للخدمات التي تقدمها والتغلب على حاجز اللغة
+                                من أجل التواصل مع المنظمات غير الحكومية، حتى يتمكن اللاجئون من الحصول على خدمات الدعم لمساعدتهم على الاندماج في فيكتوريا. كما يوفر الموقع ترجمة صوتية باللغة الإنجليزية
+                                من عدة جمل يومية، بلغتهم الخاصة. وهذا يساعد اللاجئين على التعلم، وبعض الجمل الإنجليزية الشائعة البسيطة على موقعنا على الانترنت،
+                                مما سيساعدهم على تقليص حاجز التواصل في الحياة اليومية، وخاصة عند التواصل مع المنظمات غير الحكومية.</value>
+  </data>
+  <data name="About_Us_Thanks" xml:space="preserve">
+    <value>وتشمل مجموعات البيانات المفتوحة التي استخدمناها لهذا الموقع:</value>
+  </data>
+  <data name="About_Us_Thanks_One" xml:space="preserve">
+    <value>1. مراكز التطوع في فيكتوريا</value>
+  </data>
+  <data name="About_Us_Thanks_Three" xml:space="preserve">
+    <value>3 - المنظمات التي تقدم خدمات المستوطنات الإنسانية في فيكتوريا</value>
+  </data>
+  <data name="About_Us_Thanks_Two" xml:space="preserve">
+    <value>2. المنظمات التي تقدم خدمات الحياة المجانية ورخيصة في فيكتوريا</value>
+  </data>
+  <data name="Hint_Location" xml:space="preserve">
+    <value>كارنيجي</value>
+  </data>
+  <data name="Button_Message_Close" xml:space="preserve">
+    <value>أغلق</value>
+  </data>
+  <data name="Button_Message_Send" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="Go_Top" xml:space="preserve">
+    <value>اذهب للقمه</value>
+  </data>
+  <data name="Message_Step_One" xml:space="preserve">
+    <value>الخطوة 1: اكتب رسالتك</value>
+  </data>
+  <data name="Message_Step_Three" xml:space="preserve">
+    <value>الخطوة 3: اضغط على الزر</value>
+  </data>
+  <data name="Message_Step_Two" xml:space="preserve">
+    <value>الخطوة 2: حدد اللغة:</value>
+  </data>
+  <data name="Message_Translate" xml:space="preserve">
+    <value>ترجمه</value>
+  </data>
+  <data name="Message_Translation_Result" xml:space="preserve">
+    <value>نتيجة الترجمة</value>
+  </data>
+  <data name="Send_Your_Message_To" xml:space="preserve">
+    <value>إرسال رسالتك إلى</value>
+  </data>
+  <data name="Your_Location" xml:space="preserve">
+    <value>موقعك الحالي</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>اتجاه</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>حالة طوارئ</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>الجمل المعتادة</value>
+  </data>
+  <data name="Select_Topic" xml:space="preserve">
+    <value>حدد الموضوع</value>
+  </data>
+  <data name="Select_Topic_Slogan" xml:space="preserve">
+    <value>يمكنك اختيار أي من المواضيع التالية للمحادثة!</value>
+  </data>
+</root>
