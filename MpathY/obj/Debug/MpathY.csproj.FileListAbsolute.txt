@@ -643,3 +643,227 @@ C:\Users\YLY\Desktop\Version 3.3\MpathY\MpathY\obj\Debug\ar-sa\MpathY.resources.
 C:\Users\YLY\Desktop\Version 3.3\MpathY\MpathY\obj\Debug\th\MpathY.resources.dll
 C:\Users\YLY\Desktop\Version 3.3\MpathY\MpathY\obj\Debug\MpathY.dll
 C:\Users\YLY\Desktop\Version 3.3\MpathY\MpathY\obj\Debug\MpathY.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\MpathY.dll.config
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\MpathY.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\MpathY.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\ms\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\ps\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\ar-sa\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\th\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\EntityFramework.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.Razor.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\WebGrease.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\EntityFramework.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.Razor.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.Migrations.InitialModel.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ms.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ps.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ar-sa.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.th.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.csproj.GenerateResource.Cache
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\ms\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\ps\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\ar-sa\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\th\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY 3.4\MpathY\MpathY\obj\Debug\MpathY.pdb
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\MpathY.dll.config
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\MpathY.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\MpathY.pdb
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\ms\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\ps\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\ar-sa\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\th\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\Antlr3.Runtime.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\EntityFramework.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\EntityFramework.SqlServer.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\Newtonsoft.Json.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.Helpers.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.Mvc.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.Optimization.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.Razor.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.WebPages.Deployment.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.WebPages.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.WebPages.Razor.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\WebGrease.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\EntityFramework.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\EntityFramework.SqlServer.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.Helpers.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.Mvc.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.Optimization.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.Razor.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.WebPages.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.WebPages.Deployment.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\System.Web.WebPages.Razor.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\Newtonsoft.Json.xml
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\bin\Antlr3.Runtime.pdb
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.resources
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.Migrations.InitialModel.resources
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ms.resources
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ps.resources
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ar-sa.resources
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.th.resources
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.csproj.GenerateResource.Cache
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\ms\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\ps\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\ar-sa\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\th\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.dll
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.pdb
+C:\Users\YLY\Desktop\Version 3.6\MpathY\MpathY\obj\Debug\MpathY.csprojResolveAssemblyReference.cache
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\MpathY.dll.config
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\MpathY.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\MpathY.pdb
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\ms\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\ps\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\ar-sa\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\th\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\Antlr3.Runtime.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\EntityFramework.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\EntityFramework.SqlServer.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\Newtonsoft.Json.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.Helpers.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.Mvc.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.Optimization.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.Razor.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Deployment.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Razor.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\WebGrease.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\EntityFramework.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\EntityFramework.SqlServer.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.Helpers.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.Mvc.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.Optimization.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.Razor.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Deployment.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Razor.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\Newtonsoft.Json.xml
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\bin\Antlr3.Runtime.pdb
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.csprojResolveAssemblyReference.cache
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.resources
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Migrations.InitialModel.resources
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ms.resources
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ps.resources
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ar-sa.resources
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.th.resources
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.csproj.GenerateResource.Cache
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\ms\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\ps\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\ar-sa\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\th\MpathY.resources.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.dll
+C:\Users\YLY\Desktop\Version 3.6\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\MpathY.dll.config
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\MpathY.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\MpathY.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\id\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\ms\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\ar-sa\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\th\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\EntityFramework.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.Razor.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\WebGrease.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\EntityFramework.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.Razor.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Migrations.InitialModel.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.id.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ms.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ar-sa.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.th.resources
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.csproj.GenerateResource.Cache
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\id\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\ms\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\ar-sa\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\th\MpathY.resources.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.pdb
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\MpathY.dll.config
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\MpathY.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\MpathY.pdb
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\id\MpathY.resources.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\ms\MpathY.resources.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\ar-sa\MpathY.resources.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\th\MpathY.resources.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\Antlr3.Runtime.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\EntityFramework.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\EntityFramework.SqlServer.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\Newtonsoft.Json.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.Helpers.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.Mvc.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.Optimization.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.Razor.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Deployment.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Razor.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\WebGrease.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\EntityFramework.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\EntityFramework.SqlServer.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.Helpers.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.Mvc.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.Optimization.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.Razor.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Deployment.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\System.Web.WebPages.Razor.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\Newtonsoft.Json.xml
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\bin\Antlr3.Runtime.pdb
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.csprojResolveAssemblyReference.cache
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.resources
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Migrations.InitialModel.resources
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.id.resources
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ms.resources
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.ar-sa.resources
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.Content.App_LocalResources.Lang.Global.th.resources
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.csproj.GenerateResource.Cache
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\id\MpathY.resources.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\ms\MpathY.resources.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\ar-sa\MpathY.resources.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\th\MpathY.resources.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.dll
+C:\Users\YLY\Desktop\Des\Version 3.8 add photo about us\3.7 add comment\MpathY\MpathY\obj\Debug\MpathY.pdb

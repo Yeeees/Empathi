@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\YLY\Desktop\Version 3.3\MpathY\MpathY\obj\Release\Package\PackageTmp" managedRuntimeVersion="v4.0" />
-  <setAcl path="C:\Users\YLY\Desktop\Version 3.3\MpathY\MpathY\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="C:\Users\YLY\Desktop\Version 3.3\MpathY\MpathY\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <IisApp path="C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Release\Package\PackageTmp" managedRuntimeVersion="v4.0" />
+  <setAcl path="C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MpathY WEB\3.7 add comment\MpathY\MpathY\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>

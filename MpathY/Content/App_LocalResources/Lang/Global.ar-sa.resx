@@ -465,4 +465,28 @@
   <data name="Select_Topic_Slogan" xml:space="preserve">
     <value>يمكنك اختيار أي من المواضيع التالية للمحادثة!</value>
   </data>
+  <data name="Button_Find_Location" xml:space="preserve">
+    <value>البحث عن موقعك</value>
+  </data>
+  <data name="Indonesian" xml:space="preserve">
+    <value>မြန်မာ</value>
+  </data>
+  <data name="No_Email" xml:space="preserve">
+    <value>عذرا، البريد الإلكتروني غير متاح</value>
+  </data>
+  <data name="The_Team" xml:space="preserve">
+    <value>الفريق</value>
+  </data>
+  <data name="The_Team_Database" xml:space="preserve">
+    <value>متخصص في قواعد البيانات</value>
+  </data>
+  <data name="The_Team_Designer" xml:space="preserve">
+    <value>مصمم واجهة</value>
+  </data>
+  <data name="The_Team_Manager" xml:space="preserve">
+    <value>مدير المشروع</value>
+  </data>
+  <data name="The_Team_Programmer" xml:space="preserve">
+    <value>مبرمج</value>
+  </data>
 </root>

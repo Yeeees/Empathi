@@ -8,6 +8,7 @@ using System.Configuration;
 
 namespace MpathY.Models
 {
+    //Organisation search class. Including the OleDbConnection object and search query.
     public class orgtypedb
     {
         public static OleDbConnection conn;
@@ -15,13 +16,12 @@ namespace MpathY.Models
         public orgtypedb(SearchByTypeReq req)
         {
             request = req;
-            // OleDbConnection conn = GetConnection();
+            
         }
         public OleDbConnection getConn()
         {
             return conn;
         }
-        //public static OleDbConnection GetConnection()
         public List<string> GetConnection()
         {
             string conn_str = System.Configuration.ConfigurationManager.AppSettings["ConnString"].ToString() + System.Web.HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["dbPath"]) + ";";
@@ -66,7 +66,6 @@ namespace MpathY.Models
 
                 query += ");";
 
-                //    select.CommandText = "Select Organisation_Name From Organization where Organisation_ID in (select Organization_ID from Search where Classification_ID = 7);";
 
                 select.CommandText = query;
 
@@ -79,8 +78,8 @@ namespace MpathY.Models
             conn.Close();
 
             return orgList;
-            //return conn;
         }
+        //Get the list of all organsation from database.
         public List<string> selectStatement(OleDbConnection conne)
         {
             List<string> orgList = new List<string>();

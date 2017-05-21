@@ -5,6 +5,11 @@
 }
 <header>
     <style>
+        html, body {
+            height: 100%;
+            zoom:80%;
+        }
+
         nav ul {
             height: 200px;
             width: 100%;
@@ -20,9 +25,9 @@
             font-size:16px;
         }
 
-            #sentences {
+        #sentences {
             display:block;
-            height:500px;
+            height:650px;
             border: 1px solid black;
             line-height: 50px;
             list-style: none;
@@ -250,6 +255,8 @@
             background-color:white;
             padding:20px;
             border-radius:4px;
+            
+
         }
 
         .fluid-element-wrapper {
@@ -257,63 +264,98 @@
             padding-bottom: 0;
         }
 
-        @@media (max-width: 1000px) {
+        @@media (max-width: 2000px) and (min-width: 1281px) {
+
+            .drop-this {
+                position: relative;
+                top: 50px;
+            }
+
+            #map {
+                width: 100%;
+                position: relative;
+                top: 30px;
+            }
+
+            .fluid-caption1 {
+                position: relative;
+                bottom: 1px;
+            }
+
+            #about-us{
+                height:850px;
+            }
+        }
+
+        @@media (max-width: 1280px) and (min-width: 760px) {
+
+            .fluid-element-wrapper {
+                height: 100%;
+            }
+
+            #map {
+                width: 100%;
+            }
+
+            .fluid-caption {
+                position: relative;
+                bottom: 400px;
+                right: 20px;
+            }
+        }
+
+        @@media (max-width:759px) and (min-width: 321px) {
             .content-to-hide a img {
                 display: none;
             }
 
+            .fluid-element-wrapper {
+                height: 100%;
+            }
+
+            .fluid-caption {
+                position: relative;
+                bottom: 40px;
+                right: 20px;
+            }
+
+            .fluid-adjustment {
+                position: relative;
+                left: 5px;
+            }
+
+            .fluid-control {
+                position: relative;
+                bottom: 200px;
+            }
+
+            #map {
+                width: 100%;
+            }
+
+            #sentences {
+                height: 370px;
+            }
+
             .drop-this {
                 position: relative;
-                top: 500px;
-            }
-
-            @@media (max-width:799px) {
-                .fluid-element-wrapper {
-                    height: 60%;
-                }
-
-                .fluid-caption {
-                    position: relative;
-                    bottom: 40px;
-                    right: 20px;
-                }
-
-                .fluid-caption1 {
-                    position: relative;
-                    bottom: 100px;
-                    right: 20px;
-                }
-
-                .fluid-adjustment {
-                    position: relative;
-                    left: 5px;
-                }
-
-                .fluid-control {
-                    position: relative;
-                    bottom: 220px;
-                }
-
-                #map{
-                    width:100%;
-                }
-
-                #conversation{
-                    position:relative;
-                    bottom:300px;
-                }
-
-                .drop-this {
-                    position: relative;
-                    top: 100px;
-                }
+                top: 400px;
             }
         }
+
+        @@media (max-width: 321px) {
+
+            .fluid-element-wrapper {
+                height: 100%;
+            }
+
+        }
+
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </header>
 
-<body style="height:100%">
+<body>
     <div class="notranslate">
         <!--.preloader-->
         <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
@@ -344,8 +386,8 @@
                                     <div class="dropdown-content" style="position:fixed;">
                                         @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.English, "ChangeLanguage", "Language", new { SelectedLanguage = "en" }, new { @class = "btn btn-default" })
                                         @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Arabic, "ChangeLanguage", "Language", new { SelectedLanguage = "ar-sa" }, new { @class = "btn btn-default" })
-                                        @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Pashto, "ChangeLanguage", "Language", new { SelectedLanguage = "ps" }, new { @class = "btn btn-default" })
                                         @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Burmese, "ChangeLanguage", "Language", new { SelectedLanguage = "th" }, new { @class = "btn btn-default" })
+                                        @Html.ActionLink(@MpathY.Content.App_LocalResources.Lang.Global.Indonesian, "ChangeLanguage", "Language", new { SelectedLanguage = "ms" }, new { @class = "btn btn-default" })
                                     </div>
                                 </div>
                             </li>
@@ -354,7 +396,7 @@
 
                 </div>
             </div><!--/#main-nav-->
-            <div id="home-slider" class="carousel carousel-fade" data-ride="carousel" style="z-index:0; height:850px;">
+            <div id="home-slider" class="carousel carousel-fade" data-ride="carousel" style="z-index:0; height:900px;">
 
                 <div style="height:850px;">
                     <div class="carousel-inner fluid-element-wrapper">
@@ -406,7 +448,10 @@
             <div class="fluid-caption1 fluid-adjustment" style="padding-left:10px;">
                 <div class="row fluid-caption1 fluid-adjustment">
                     <div class="text-center col-lg-2 fluid-caption1">
-                        <h3>@MpathY.Content.App_LocalResources.Lang.Global.Hint_Search_Address</h3>
+                        <!--15/5/2017 find current location button-->
+                        <button onclick="findCurrLoc()" style="width:160px" class=" btn btn-info">@MpathY.Content.App_LocalResources.Lang.Global.Button_Find_Location</button><b />
+                        <!--15/5/2017 ends-->
+                        <h3>@MpathY.Content.App_LocalResources.Lang.Global.Hint_Search_Address</h3>                        
 
                         <input id="locationform" type="text" name="search" placeholder="@MpathY.Content.App_LocalResources.Lang.Global.Hint_Location">
                         <script>
@@ -568,6 +613,8 @@
                             <button id="uncheckAll" style="width:160px;" class="btn btn-info" onclick="uncheckAll('cck');mapUncheck()">@MpathY.Content.App_LocalResources.Lang.Global.Button_Clear_Checkbox</button>
                         </div>
                         <script>
+                            
+                            //set checkbox to uncheck
                             mapUncheck = function () {
                                 for (i = 0; i < markers1.length; i++) {
                                     marker2 = gmarkers1[i];
@@ -635,7 +682,7 @@
                        
                     </div>
                         <!-- Display Popup-Email -->
-                        <div class="text-center col-lg-9" style="height:730px">
+                        <div class="text-center col-lg-9" style="height:750px">
 
 
                             <section id="map" style="height:100%; width:90%;">
@@ -650,22 +697,20 @@
                                     // prompted by your browser. If you see the error "The Geolocation service
                                     // failed.", it means you probably did not give permission for the browser to
                                     // locate you.
-                                    var gmarkers1 = [];
-                                    var markers1 = [];
+                                    var gmarkers1 = [];//geoMarker collection, for all ngo's marker
+                                    var markers1 = [];//for markers showing on the map
 
-                                    var markers2 = JSON.parse('@Html.Raw(Json.Encode(Model.GetConnection()))');
+                                    var markers2 = JSON.parse('@Html.Raw(Json.Encode(Model.GetConnection()))');//get all the NGO objects from model, convert C# object to Javascript object
                                     for (var i = 0; i < markers2.length; i++)//markers2.length
                                     {
                                         var org = markers2[i];
-                                        //org.servicesLine += " All";
+                                   
                                         var arrayItem = [org.Name, org.Address + ',Victoria,Australia', org.servicesLine, org.Latitude, org.Longitude, org.Email, org.Phone_Number, org.Suburb, org.Postcode, org.Services];
                                         markers1.push(arrayItem);
-                                        //console.log(i);
-                                        //console.log('ad:'+arrayItem);
+    
                                     }
-                                    //console.log('markers2'+markers2);
-
-                                    function initMap()//gai
+                              
+                                    function initMap()//map
                                     {
 
 
@@ -689,19 +734,14 @@
                                             var address = marker[1];
                                             var pso = new google.maps.Geocoder();
 
-                                            //add javascript in infobox
-                                            var s = document.createElement("script");
-                                            s.type = "text/javascript";
-                                            s.src = "Scripts/infobox.js";
-                                            $("head").append(s);
+                                           
 
 
-                                            var cor = '-37.814678, 144.955506';
-                                            //console.log('pos2:' + pos);
+                                            var cor = '-37.814678, 144.955506';//defualt centre of the map
+                                  
                                             var category = marker[2];
                                             var title = marker[0];
-                                            //= new google.maps.LatLng(marker[2], marker[3]);
-                                            //console.log('pos:' + pos);
+                                          
                                             var pos = new google.maps.LatLng(marker[3], marker[4]);
                                             var Email = marker[5];
                                             var Phone_Number = marker[6];
@@ -729,12 +769,13 @@
                                             else {
                                                 var urlString = 'https://www.google.com.au/maps/dir/' + document.getElementById('locationform').value + "/";
                                             }
+                                            // information box content
                                             var contentString = '<div id="content">' +
                                             '<div id="siteNotice">' +
                                                 '<h4>' + title + '<h4>' +
                                                 '<p>' + '@MpathY.Content.App_LocalResources.Lang.Global.Address ' + address + ',' + Suburb + ', VIC, ' + Postcode + '<p>' +
                                                 '<p>' + '<a href="' + urlStringOrg + address + ' ' + Suburb + '"' + ' target="_blank">' + '@MpathY.Content.App_LocalResources.Lang.Global.Get_There' + '</a>' + '<p>' +
-                                                //'<button id="SearchDir" onclick="searchDir('+ urlString + address + ' ' + Suburb +')" >How can I get there?</button>'+
+                                               
                                                 '<p>' + '@MpathY.Content.App_LocalResources.Lang.Global.Phone_Number ' + Phone_Number + '<p>' +
                                                 '<p>' + '@MpathY.Content.App_LocalResources.Lang.Global.Email ' + '<label id ="EmailAdd">' + Email + '</label>' + '<p>' +
                                                 '<button class="btn btn-info" onclick="myFunction()">@MpathY.Content.App_LocalResources.Lang.Global.Email_Send</button> &nbsp;' +
@@ -742,18 +783,18 @@
 
                                             '</div>' +
                                             '</div>';
-                                            //document.getElementById("EmailAdd").innerHTML
+                                  
                                             gmailFunction = function () {
                                                 var link = "https://mail.google.com/mail/?view=cm&fs=1&to=" + document.getElementById("EmailAdd").innerHTML;
                                                 link = link + "&su=test&body=test";
                                                 window.open(link);
                                             }
-
+                                            //sending email button
                                             myFunction = function () {
                                                 console.log('myFunction1');
                                                 var email = document.getElementById("EmailAdd").innerHTML;
                                                 console.log(email);
-                                                if (email == null || typeof (email) == "null" || !email || email.length == 0) {
+                                                if (email == null || typeof (email) == "null" || !email || email.length == 0) { // validation in case there is no email
                                                     alert("Sorry, This organisation hasn't provide E-mail address yet.");
                                                 }
                                                 else {
@@ -775,7 +816,7 @@
                                                 }
                                             }
 
-
+                                            //search direction function
                                             searchDir = function (Addr) {
                                                 var urlString;
                                                 //var urlString = 'https://www.google.com.au/maps/dir/carnegie station/'
@@ -830,7 +871,7 @@
 
                                         }
 
-
+                                        //add new location on map
                                         addNewLoc = function (newAddr) {
                                             if (newAddr.length == 0) {
                                                 alert('Cannot search empty address..');
@@ -883,7 +924,7 @@
                                             }
                                         }
 
-                                       
+
 
                                         /**
                                          * Function to filter markers by category
@@ -924,7 +965,7 @@
 
                                             map.setZoom(12);
 
-                                           
+
                                             for (i = 0; i < markers1.length; i++) {
                                                 marker = gmarkers1[i];
                                                 var flag = false;
@@ -954,6 +995,37 @@
 
                                         }
 
+                                        //find current location
+
+                                        //15/5/2017 find current location function
+                                        findCurrLoc = function () {
+                                            if (navigator.geolocation) {
+                                                navigator.geolocation.getCurrentPosition(function (position) {
+                                                    var pos = {
+                                                        lat: position.coords.latitude,
+                                                        lng: position.coords.longitude
+                                                    };
+
+                                                    infoWindow.setPosition(pos);
+                                                    infoWindow.setContent('@MpathY.Content.App_LocalResources.Lang.Global.Your_Location');
+                                                    map.setCenter(pos);
+                                                    map.setZoom(12);
+
+                                                }, function () {
+                                                    //handleLocationError(true, infoWindow, map.getCenter());
+                                                });
+
+                                                var geocoder = new google.maps.Geocoder();
+
+                                               
+
+                                            } else {
+                                                // Browser doesn't support Geolocation
+                                                handleLocationError(false, infoWindow, map.getCenter());
+                                            }
+                                        }
+                                        //15/5/2017 ends
+
                                         // Try HTML5 geolocation.
                                         if (navigator.geolocation) {
                                             navigator.geolocation.getCurrentPosition(function (position) {
@@ -965,9 +1037,9 @@
                                                     position: pos,
                                                     title: "Current Location",
                                                     map: map,
-                                                    
-                                                    icon: 'http://maps.google.com/mapfiles/kml/shapes/ranger_station.png',
-                                                    
+
+                                                    icon: 'http://maps.google.com/mapfiles/kml/pal3/icon28.png',
+
 
                                                 });
                                                 infoWindow.setPosition(pos);
@@ -980,9 +1052,7 @@
 
                                             var geocoder = new google.maps.Geocoder();
 
-                                            document.getElementById('type').addEventListener('click', function () {
-                                                geocodeAddress(geocoder, map);
-                                            });
+                                            
 
                                         } else {
                                             // Browser doesn't support Geolocation
@@ -1031,20 +1101,7 @@
             </div>
         </section>
 
-        <section id="conversation">
-            <div class="container fluid-element-wrapper" style="padding-bottom:0px;">
-                <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="row">
-                        <div class="text-center col-sm-8 col-sm-offset-2">
-                            <h2>@MpathY.Content.App_LocalResources.Lang.Global.Conversation_Starter</h2>
-                            <p>@MpathY.Content.App_LocalResources.Lang.Global.Conversation_Starter_Slogan</p>
-                            <div style="position:relative; top:20px;">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="conversation"> 
             <div class="text-center" style="padding-left:10px;">
                 <div class="row">
                     <div class="text-center" style="padding-left:10px;">
@@ -1180,15 +1237,20 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <input type="checkbox" name="Convo_All" id="Convo_All" autocomplete="off" rel="all" style="visibility:hidden;" />
+                                            <input type="checkbox" name="Convo_All" class="conv" id="Convo_All" autocomplete="off" rel="settlement" style="visibility:hidden;" />
                                         </div>
 
 
                                     </div>
                                 </div>
                                 <div>
-                                    <button id="uncheckAll" style="width:160px; position:relative; right:30px;" class="btn btn-info" onclick="uncheckAll('cck1')">@MpathY.Content.App_LocalResources.Lang.Global.Button_Clear_Checkbox</button>
+                                    <button id="uncheckAll1" style="width:160px; position:relative; right:30px;" rel="settlement" class="btn btn-info" onclick="uncheckAll('cck1'); voiceUncheck()">@MpathY.Content.App_LocalResources.Lang.Global.Button_Clear_Checkbox</button>
                                 </div>
+                                <script>
+                                    function voiceUncheck() {
+                                        $('#sentences > li').hide();
+                                    }
+                                </script>
                             </div>
                             <div id="content-list" class="col-lg-1 col-sm-1 content-to-hide" style="display: inline-block">
                                 <a style="position:relative; top:300px;"><img src="/Content/mytemplate/images/397349990.jpg" /></a>
@@ -1232,8 +1294,8 @@
                                         <li id="How_much_is_the_rent" class="general accommodation all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence32</li>
                                         <li id="I_want_to_be_a_volunteer" class="general volunteer all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence33</li>
                                         <li id="I_need_a_volunteer_to_help_me" class="general volunteer all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence34</li>
-                                        <li id="I_want_to_quit_drinking" class="general counselling all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence35</li>
-                                        <li id="I_want_to_quit_taking_drugs" class="general counselling all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence36</li>
+                                        <li id="I_need_to_quit_drinking" class="general counselling all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence35</li>
+                                        <li id="I_need_to_quit_drug" class="general counselling all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence36</li>
                                         <li id="can_you_help_me_to_settle_here" class="general settlement all" onclick="voiceTranslation(id)">@MpathY.Content.App_LocalResources.Lang.Global.Sentence37</li>
                                     </ul>
                                 </nav>
@@ -1241,8 +1303,8 @@
                             <div id="content-list" class="col-lg-1 col-sm-1 content-to-hide" style="display: inline-block">
                                 <a style="position:relative; top:300px;"><img src="/Content/mytemplate/images/397349990.jpg" /></a>
                             </div>
-                            <div id="content-list" class="col-lg-3 col-sm-3">
-                                <h2 style="text-align:center">@MpathY.Content.App_LocalResources.Lang.Global.Translation</h2>
+                            <div id="content-list" class="col-lg-3 col-sm-3" style="margin: 0px; padding: 0px;">
+                                <h2 style="text-align:center;">@MpathY.Content.App_LocalResources.Lang.Global.Translation</h2>
                                 <div id="content_1" style="text-align: center; font-size: 30px;position:relative; top:250px;" class="notranslate"><b id='translateResult' class="notranslate"></b><audio id="sound" preload="auto"></audio></div>
                             </div>
                             <div>
@@ -1252,11 +1314,11 @@
                         </div>
                     </div>
                     <script>
-
+                        //voice translation function
                 voiceTranslation = function (sentence) {
 
                     var id = sentence;
-                    //var content = document.getElementById(sentence).innerHTML;
+                 
                     var content;
                     switch (id) {
                         case "Hello":
@@ -1352,10 +1414,10 @@
                         case "I_want_to_be_a_volunteer":
                             content = "I want to be a volunteer";
                             break;
-                        case "I_want_to_quit_taking_drugs":
+                        case "I_need_to_quit_drug":
                             content = "I need to quit drug";
                             break;
-                        case "I_want_to_quit_drinking":
+                        case "I_need_to_quit_drinking":
                             content = "I need to quit drinking";
                             break;
                         case "I_need_financial_support":
@@ -1374,9 +1436,9 @@
                     }
 
 
-
-                    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,ar,my,ps" }, 'google_translate_element');
-                    //document.getElementById("translateImg").src = '@Url.Content("~/translation_image/hello.jpg")';
+               
+                   
+                 
                     document.getElementById("translateResult").innerHTML = content;
                     document.getElementById("sound").src = '@Url.Content("~/translation_sound/")' + id + ".mp3";
                     document.getElementById("sound").play();
@@ -1391,7 +1453,7 @@
 
         </section><!--/#services-->
 
-        <section id="about-us" class="parallax drop-this">
+        <section id="about-us" class="parallax drop-this" style="padding-bottom:60px;">
             <div class="container">
                 <div class="row">
                     <div class="text-center col-sm-8 col-sm-offset-2">
@@ -1401,12 +1463,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 col-sm-6">
+                    <div class="col-lg-12">
                         <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <p>
                                 @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Content
                             </p>
-                            <p>
+                            <p class="text-center">
                                 @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Thanks  <br>
                                 @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Thanks_One <br>
                                 http://data.gov.au/dataset/volunteering-centres-services-and-groups-victoria/resource/c9be70dc-a029-4bdc-b2f9-ec5f5f780d0c <br>
@@ -1414,8 +1476,6 @@
                                 https://data.melbourne.vic.gov.au/People-Events/Helping-Out/jduy-94rf <br>
                                 @MpathY.Content.App_LocalResources.Lang.Global.About_Us_Thanks_Three <br>
                                 https://www.dss.gov.au/our-responsibilities/settlement-and-multicultural-affairs/programs-policy/settlement-services/settlement-services-locator <br>
-                                <br>
-                                <br>
                                 <br>
                                 <br>
                                 <br>
@@ -1458,6 +1518,8 @@
                 function uncheckAll(divid) {
                     $('#' + divid + ' :checkbox:enabled').prop('checked', false);
                 }
+
+               
             </script>
             <a href="#" class="back-to-top" style="display: inline;">@MpathY.Content.App_LocalResources.Lang.Global.Go_Top</a>
         </div>
@@ -1486,19 +1548,14 @@
             
             <div id="popup-container">
             <br />
-            <br />
-            
-                <!--<form method="post" action="@Url.Action("Form", "Home")">-->
-                  
-                  <!--<form action="mailto:" method="post" enctype="text/plain">-->
+
+
                 <div class="notranslate">
                     @MpathY.Content.App_LocalResources.Lang.Global.Send_Your_Message_To
                     <label id="ngoEmailAddr"></label><br />
                     @MpathY.Content.App_LocalResources.Lang.Global.Message_Step_One<br>
                     <textarea name="userMsg" id="userMsg" style="width:250px;height:150px;"></textarea><br />
 
-                    <br />
-                    <br />
 
                     @MpathY.Content.App_LocalResources.Lang.Global.Message_Step_Two
                 </div><!--Notransalte div ends-->
@@ -1510,14 +1567,16 @@
                     }
                 </script>
 
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
 
             
             <br />
                 <div class="notranslate">
                     @MpathY.Content.App_LocalResources.Lang.Global.Message_Step_Three <button onclick="transFunction()">@MpathY.Content.App_LocalResources.Lang.Global.Message_Translate</button><br />
                 </div><!--Notransalte div ends-->
-                <label id="transResult">@MpathY.Content.App_LocalResources.Lang.Global.Message_Translation_Result</label>
+              
+                    <label id="transResult">@MpathY.Content.App_LocalResources.Lang.Global.Message_Translation_Result</label>
+                
                 <div class="notranslate">
                     <br />
                     <button type="submit" class="btn btn-primary" onclick="sendGmailFunction()">@MpathY.Content.App_LocalResources.Lang.Global.Button_Message_Send</button>
@@ -1526,11 +1585,13 @@
                 </div><!--Notransalte div ends-->
                 
             <script>
+                //copy message content
                 transFunction = function () {
                     var n1 = document.getElementById("userMsg");
                     var n2 = document.getElementById("transResult");
                     n2.textContent = n1.value;
                 }
+                //call Gmail to send the message
                 sendGmailFunction = function () {
 
                     var link = "https://mail.google.com/mail/?view=cm&fs=1&to=" + document.getElementById("EmailAdd").innerHTML;
@@ -1541,12 +1602,6 @@
                     window.open(link);
                 }
 
-                sendEmail = function () {
-                    var email = document.getElementById("ngoEmailAddr").textContent;
-                    var subject = document.getElementById("userSubject");
-
-                    window.location.href = "mailto:" + email + "?subject=" + subject;
-                }
             </script>
                 
                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-590ac0bc5d4950a4"></script> 
@@ -1560,7 +1615,10 @@
 
 
     <script>
+                //script for displaying language choice popup
                 $(document).ready(function () {
+
+                    //determine if cookie is present in client browser
                     if (localStorage.getItem('popState') != 'shown') {
                     //select the POPUP FRAME and show it
                     $("#popupoverlay").hide().fadeIn(1000);

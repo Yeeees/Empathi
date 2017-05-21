@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Test404.Controllers
 {
+    //This class is for error control
     public class ErrorController : Controller
     {
         //

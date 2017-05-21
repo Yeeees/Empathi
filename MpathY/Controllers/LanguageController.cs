@@ -5,6 +5,7 @@ using System.Web.Mvc;
 
 namespace ResourceApplication.Controllers
 {
+    //Muti-language dictionary controller
     public class LanguageController : Controller
     {
         public ActionResult ChangeLanguage(string selectedlanguage)

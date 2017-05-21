@@ -8,6 +8,7 @@ using System.Configuration;
 
 namespace MpathY.Models
 {
+    //Get whole organisation list, in order to put these organisation into map.
     public class wholeOrgList
     {
         public static OleDbConnection conn;
@@ -15,13 +16,11 @@ namespace MpathY.Models
         public wholeOrgList(SearchByTypeReq req)
         {
             request = req;
-            // OleDbConnection conn = GetConnection();
         }
         public OleDbConnection getConn()
         {
             return conn;
         }
-        //public static OleDbConnection GetConnection()
         public List<Organisation> GetConnection()
         {
             string conn_str = System.Configuration.ConfigurationManager.AppSettings["ConnString"].ToString() + System.Web.HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["dbPath"]) + ";";
@@ -35,10 +34,8 @@ namespace MpathY.Models
 
             select.CommandText = query;
 
-            //string countQuery = "selet o.Organisation_Name as name, count(s.Organization_ID) as num from Organization o, Search s where o.Organisation_ID=s.Organization_ID group by ";
 
             OleDbDataReader readerForOrg = select.ExecuteReader();
-            //OleDbDataReader readerForType
             while (readerForOrg.Read())
             {
                 bool flag = false;//check whether the current organisation is existed in the list
@@ -73,7 +70,6 @@ namespace MpathY.Models
                     newOrg.Phone_Number = readerForOrg[6].ToString();
                     newOrg.Suburb = readerForOrg[7].ToString();
                     newOrg.Postcode = readerForOrg[8].ToString();
-                    //newOrg.Services = readerForOrg[9].ToString();
                     orgList.Add(newOrg);
                 }
 
@@ -84,7 +80,6 @@ namespace MpathY.Models
             conn.Close();
 
             return orgList;
-            //return conn;
         }
 
     }

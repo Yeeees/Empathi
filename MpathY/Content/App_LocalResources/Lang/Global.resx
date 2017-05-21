@@ -365,7 +365,7 @@
     <value>We help you connect with support organizations around Victoria</value>
   </data>
   <data name="Indonesian" xml:space="preserve">
-    <value>Bahasa Indonesia</value>
+    <value>မြန်မာ</value>
   </data>
   <data name="Button_Close_Popup" xml:space="preserve">
     <value>Close</value>
@@ -481,5 +481,26 @@
   </data>
   <data name="Select_Topic_Slogan" xml:space="preserve">
     <value>You can choose any of the following topics for conversation!</value>
+  </data>
+  <data name="Button_Find_Location" xml:space="preserve">
+    <value>Find your location</value>
+  </data>
+  <data name="No_Email" xml:space="preserve">
+    <value>Sorry, email is not available</value>
+  </data>
+  <data name="The_Team" xml:space="preserve">
+    <value>The Team</value>
+  </data>
+  <data name="The_Team_Database" xml:space="preserve">
+    <value>Database Specialist</value>
+  </data>
+  <data name="The_Team_Designer" xml:space="preserve">
+    <value>UI Designer</value>
+  </data>
+  <data name="The_Team_Manager" xml:space="preserve">
+    <value>Project Manager</value>
+  </data>
+  <data name="The_Team_Programmer" xml:space="preserve">
+    <value>Programmer</value>
   </data>
 </root>

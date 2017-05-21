@@ -5,6 +5,7 @@ using System.Web;
 
 namespace MpathY.Models
 {
+    //Define the multi-select request.
     public class SearchByTypeReq
     {
         //public List<string> typeList { get; set; }

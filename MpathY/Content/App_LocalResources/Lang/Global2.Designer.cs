@@ -190,6 +190,15 @@ namespace MpathY.Content.App_LocalResources.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Find your location.
+        /// </summary>
+        public static string Button_Find_Location {
+            get {
+                return ResourceManager.GetString("Button_Find_Location", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Language.
         /// </summary>
         public static string Button_Language_Choice {
@@ -469,7 +478,7 @@ namespace MpathY.Content.App_LocalResources.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bahasa Indonesia.
+        ///   Looks up a localized string similar to မြန်မာ.
         /// </summary>
         public static string Indonesian {
             get {
@@ -618,6 +627,15 @@ namespace MpathY.Content.App_LocalResources.Lang {
         public static string Need_Job1 {
             get {
                 return ResourceManager.GetString("Need_Job1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorry, email is not available.
+        /// </summary>
+        public static string No_Email {
+            get {
+                return ResourceManager.GetString("No_Email", resourceCulture);
             }
         }
         
@@ -1032,6 +1050,51 @@ namespace MpathY.Content.App_LocalResources.Lang {
         public static string Start_Conversation {
             get {
                 return ResourceManager.GetString("Start_Conversation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Team.
+        /// </summary>
+        public static string The_Team {
+            get {
+                return ResourceManager.GetString("The_Team", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Database Specialist.
+        /// </summary>
+        public static string The_Team_Database {
+            get {
+                return ResourceManager.GetString("The_Team_Database", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UI Designer.
+        /// </summary>
+        public static string The_Team_Designer {
+            get {
+                return ResourceManager.GetString("The_Team_Designer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Project Manager.
+        /// </summary>
+        public static string The_Team_Manager {
+            get {
+                return ResourceManager.GetString("The_Team_Manager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Programmer.
+        /// </summary>
+        public static string The_Team_Programmer {
+            get {
+                return ResourceManager.GetString("The_Team_Programmer", resourceCulture);
             }
         }
         

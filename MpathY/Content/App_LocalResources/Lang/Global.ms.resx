@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,312 +59,440 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="About_Us" xml:space="preserve">
-    <value>Tentang kami</value>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Arabic" xml:space="preserve">
+    <value>عربى</value>
   </data>
-	<data name="Accomodation" xml:space="preserve">
-    <value>Tempat tinggal</value>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
   </data>
-	<data name="All" xml:space="preserve">
-    <value>Semua </value>
+  <data name="Food" xml:space="preserve">
+    <value>အစားအေသာက္ဝန္ေဆာင္မွု</value>
   </data>
-	<data name="Arabic" xml:space="preserve">
-    <value>Bahasa Arab</value>
+  <data name="Volunteer" xml:space="preserve">
+    <value>အခမဲ့အလုပ္</value>
   </data>
-	<data name="Burmese" xml:space="preserve">
-    <value>Bahasa Burma</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>စာနာျခင္းအဖြဲ ့ မွ ႀကိဳဆိုပါသည္</value>
   </data>
-	<data name="Conversation_Starter" xml:space="preserve">
-    <value>Penerjemah kalimat</value>
+  <data name="Burmese" xml:space="preserve">
+    <value>
+درى</value>
   </data>
-	<data name="Conversation_Starter_Slogan" xml:space="preserve">
-    <value>Mau mulai pembicaraan dengan bahasa Indonesia? Kami bisa bantu!</value>
+  <data name="Learn_English" xml:space="preserve">
+    <value>အဂၤလိပ္စာ ေလ့လာပါ။</value>
   </data>
-	<data name="Counselling" xml:space="preserve">
-    <value>Konseling</value>
+  <data name="Pashto" xml:space="preserve">
+    <value>မြန်မာ</value>
   </data>
-	<data name="Education" xml:space="preserve">
-    <value>Mulailah merencanakan masa depan anak anda</value>
+  <data name="Sentence1" xml:space="preserve">
+    <value>ဟဲလို</value>
   </data>
-	<data name="Education1" xml:space="preserve">
-    <value>Kontak Humanitarian Settlement Services</value>
+  <data name="Sentence11" xml:space="preserve">
+    <value>ခြင့္လႊတ္ပါ။</value>
   </data>
-	<data name="English" xml:space="preserve">
-    <value>Bahasa Inggris</value>
+  <data name="Sentence12" xml:space="preserve">
+    <value>ေက်းဇူးတင္ပါတယ္။</value>
   </data>
-	<data name="English_Lesson" xml:space="preserve">
-    <value>Les bahasa Inggris</value>
+  <data name="Sentence4" xml:space="preserve">
+    <value>ကူညီပါ။</value>
   </data>
-	<data name="Food" xml:space="preserve">
-    <value>Makanan gratis</value>
+  <data name="Button_Close_Popup" xml:space="preserve">
+    <value>ပိတ်</value>
   </data>
-	<data name="Grocery" xml:space="preserve">
-    <value>Dimana letak supermarket?</value>
+  <data name="Empathi" xml:space="preserve">
+    <value>စာနာျခင္း</value>
   </data>
-	<data name="Health" xml:space="preserve">
-    <value>Kesehatan</value>
+  <data name="Button_Language_Choice" xml:space="preserve">
+    <value>ဘာသာစကား</value>
   </data>
-	<data name="Hello" xml:space="preserve">
-    <value>Halo</value>
+  <data name="Button_Search_Address" xml:space="preserve">
+    <value>ရွာပါ</value>
   </data>
-	<data name="Home" xml:space="preserve">
-    <value>Beranda</value>
+  <data name="Conversation_Starter" xml:space="preserve">
+    <value>စကားေၿပာဖိုု ့စရန္။</value>
   </data>
-	<data name="Humanitarian_Settlement" xml:space="preserve">
-    <value>Program Humanitarian Settlement</value>
+  <data name="Conversation_Starter_Slogan" xml:space="preserve">
+    <value>သင့်ကိုယ်ပိုင်ဘာသာစကားမှာစကားစတင်လိုပါသလား? ငါတို့သည်သင်တို့ကိုကူညီနိုငျပါသညျ!</value>
   </data>
-	<data name="Indonesia" xml:space="preserve">
-    <value>Bahasa Indonesia</value>
+  <data name="Counselling" xml:space="preserve">
+    <value>အရက္နွင့္ေဆးဝါးပတ္သက္ေသာတိုင္ပင္မွု</value>
   </data>
-	<data name="Input_Location" xml:space="preserve">
-    <value>Tulis lokasi anda:</value>
+  <data name="English_Lesson" xml:space="preserve">
+    <value>အဂၤလိပ္စာဝန္ေဆာင္မွု</value>
   </data>
-	<data name="Job" xml:space="preserve">
-    <value>Pekerjaan</value>
+  <data name="Grocery" xml:space="preserve">
+    <value>စူပါမားကက်အဘယ်မှာရှိသနည်း</value>
   </data>
-	<data name="Legal_Advice" xml:space="preserve">
-    <value>Bantuan hukum</value>
+  <data name="Heading_Search_NGO" xml:space="preserve">
+    <value>အကူအညီေထာက္ပံ့ေရးကိုရွာပါ။</value>
   </data>
-	<data name="Looking" xml:space="preserve">
-    <value>Apa yang bisa kami bantu?</value>
+  <data name="Health" xml:space="preserve">
+    <value>က်န္းမာေရးဝန္ေဆာင္မွု</value>
   </data>
-	<data name="Myki" xml:space="preserve">
-    <value>Bagaimana beli tiket?</value>
+  <data name="Hello" xml:space="preserve">
+    <value>ဟလို</value>
   </data>
-	<data name="Pashto" xml:space="preserve">
-    <value>Bahasa Pashto</value>
+  <data name="Hint_Red_Pin" xml:space="preserve">
+    <value>ဆရာဝန်တစ်ဦးနှင့်အတူထိတွေ့ရယူလိုက်ပါ။
+</value>
   </data>
-	<data name="Search_NGO" xml:space="preserve">
-    <value>Cari organisasi kemanusiaan</value>
+  <data name="Hint_Start_Conversation" xml:space="preserve">
+    <value>ေအာက္ပါ ေလးေထာင့္ကြက္ထဲကစာရင္းထဲမွ စာေၾကာင္းတစ္ေၾကာင္းကို ေ႐ြးျခယ္ပါ။ ကြ်န္ပ္တို ့အသံျဖင့္ အဂၤလိပ္ဘာသာသို ့ဘာသာျပန္ေပးပါမည္။</value>
   </data>
-	<data name="Search_NGO_Slogan" xml:space="preserve">
-    <value>Perlu bantuan? Kami bisa bantu anda!</value>
-    <comment>start of section 1</comment>
+  <data name="Home" xml:space="preserve">
+    <value>မူလစာမ်က္ႏွာ</value>
   </data>
-	<data name="Start_Conversation" xml:space="preserve">
-    <value>Mulai pembicaraan</value>
+  <data name="Humanitarian_Settlement" xml:space="preserve">
+    <value>လူသားျခင္းစာနာေသာအေျချချခင္း</value>
   </data>
-	<data name="Time" xml:space="preserve">
-    <value>Kapan kereta berangkat?</value>
+  <data name="Job" xml:space="preserve">
+    <value>အလုပ္ရွာေဖြေရးဝန္ေဆာင္မွု</value>
   </data>
-	<data name="Train" xml:space="preserve">
-    <value>Dimana letak stasiun kereta?</value>
+  <data name="Learn_English1" xml:space="preserve">
+    <value>သင္နွင့္ အနီးစပ္ဆံုးေနရာမွာရွိေသာ အဂၤလိပ္စာသင္ၾကားေရးဝန္ေဆာင္မွုကိုရွာပါ။</value>
   </data>
-	<data name="Translation" xml:space="preserve">
-    <value>Terjemahan kalimat</value>
+  <data name="Legal_Advice" xml:space="preserve">
+    <value>ဥပေဒေဒေရးရာအႀကံေပးဝန္ေဆာင္မွု</value>
   </data>
-	<data name="Vaccinate" xml:space="preserve">
-    <value>Sudahkah anda mendapat vaksinasi?</value>
+  <data name="Looking" xml:space="preserve">
+    <value>သင္ဘာရွာေနပါသလဲ။</value>
   </data>
-	<data name="Vaccinate1" xml:space="preserve">
-    <value>Pergilah ke klinik terdekat</value>
+  <data name="Medical_Help" xml:space="preserve">
+    <value>က်န္းမာေရးအတြက္ အကူအညီ</value>
   </data>
-	<data name="Voice_Translation" xml:space="preserve">
-    <value>Penerjemah kalimat</value>
+  <data name="Medical_Help1" xml:space="preserve">
+    <value>ဆရာဝန်တစ်ဦးနှင့်အတူထိတွေ့ရယူလိုက်ပါ။</value>
   </data>
-	<data name="Volunteer" xml:space="preserve">
-    <value>Relawan</value>
+  <data name="Need_Job" xml:space="preserve">
+    <value>အလုပ္လုပ္လိုပါသလား။</value>
   </data>
-	<data name="Watermark_Location" xml:space="preserve">
-    <value>Tulis lokasi anda disini</value>
+  <data name="Need_Job1" xml:space="preserve">
+    <value>သင္နွင့္ အနီးစပ္ဆံုးေနရာမွာရွိေသာ အလုပ္ရွာေဖြေရးဝန္ေဆာင္မွုကိုဆက္သြယ္ပါ။</value>
   </data>
-	<data name="Welcome" xml:space="preserve">
-    <value>Selamat Datang</value>
+  <data name="Search_NGO" xml:space="preserve">
+    <value>ရှာရန်ပံ့ပိုးမှုန်ဆောင်မှုများ</value>
   </data>
-	<data name="Welcome1" xml:space="preserve">
-    <value>Kami bisa membantu anda mencari organisasi di sekitar Victoria</value>
+  <data name="Search_NGO_Slogan" xml:space="preserve">
+    <value>အကူအညီရှာဖွေနေပါသလား ကျနော်တို့သူတို့ကိုသင်ကူညီရှာဖွေနိုင်သည်!</value>
   </data>
-	<data name="Button_Clear_Address" xml:space="preserve">
-		<value>Hapus</value>
-	</data>
-	<data name="Button_Clear_Checkbox" xml:space="preserve">
-		<value>Hapus kotak centang</value>
-	</data>
-	<data name="Button_Language_Choice" xml:space="preserve">
-		<value>Pilih Bahasa</value>
-	</data>
-	<data name="Button_Search_Address" xml:space="preserve">
-		<value>Cari lokasi</value>
-	</data>
-	<data name="Heading_Search_NGO" xml:space="preserve">
-		<value>Cari organisasi kemanusiaan</value>
-	</data>
-	<data name="Hint_Red_Pin" xml:space="preserve">
-		<value>Klik pin merah untuk mendapat informasi lebih detil</value>
-	</data>
-	<data name="Hint_Search_Box_Address" xml:space="preserve">
-		<value>Cari lokasi disini:</value>
-	</data>
-	<data name="Hint_Start_Conversation" xml:space="preserve">
-		<value>Pilih salah satu kalimat dibawah ini dan kami bisa terjemahkan ke bahasa Inggris secara tertulis dan lisan</value>
-	</data>
-	<data name="Learn_English" xml:space="preserve">
-		<value>Belajar Bahasa Inggris</value>
-	</data>
-	<data name="Learn_English1" xml:space="preserve">
-		<value>Cari tempat les Bahasa Inggris</value>
-	</data>
-	<data name="Medical_Help" xml:space="preserve">
-		<value>Bantuan medikal</value>
-	</data>
-	<data name="Medical_Help1" xml:space="preserve">
-		<value>Hubungi doktor segera</value>
-	</data>
-	<data name="Need_Job" xml:space="preserve">
-		<value>Perlu pekerjaan?</value>
-	</data>
-	<data name="Need_Job1" xml:space="preserve">
-		<value>Organisasi kemanusiaan dibawah ini bisa membantu anda</value>
-	</data>
-	<data name="Sentence1" xml:space="preserve">
-		<value>Halo</value>
-	</data>
-	<data name="Sentence10" xml:space="preserve">
-		<value>Dimana letak perhentian trem atau halte bus terdekat?</value>
-	</data>
-	<data name="Sentence11" xml:space="preserve">
-		<value>Maaf</value>
-	</data>
-	<data name="Sentence12" xml:space="preserve">
-		<value>Terima kasih</value>
-	</data>
-	<data name="Sentence13" xml:space="preserve">
-		<value>Ini berapa harganya?</value>
-	</data>
-	<data name="Sentence14" xml:space="preserve">
-		<value>Saya tidak mengerti</value>
-	</data>
-	<data name="Sentence15" xml:space="preserve">
-		<value>Saya merasa sakit</value>
-	</data>
-	<data name="Sentence16" xml:space="preserve">
-		<value>Saya butuh tempat untuk tinggal</value>
-	</data>
-	<data name="Sentence17" xml:space="preserve">
-		<value>Saya perlu doktor</value>
-	</data>
-	<data name="Sentence18" xml:space="preserve">
-		<value>Saya perlu makan</value>
-	</data>
-	<data name="Sentence19" xml:space="preserve">
-		<value>Saya perlu pekerjaan</value>
-	</data>
-	<data name="Sentence2" xml:space="preserve">
-		<value>Apa kabar?</value>
-	</data>
-	<data name="Sentence20" xml:space="preserve">
-		<value>Saya perlu psikiater</value>
-	</data>
-	<data name="Sentence21" xml:space="preserve">
-		<value>Saya perlu uang</value>
-	</data>
-	<data name="Sentence22" xml:space="preserve">
-		<value>Saya perlu pembalut</value>
-	</data>
-	<data name="Sentence23" xml:space="preserve">
-		<value>Saya perlu roti</value>
-	</data>
-	<data name="Sentence24" xml:space="preserve">
-		<value>Saya mau belajar bahasa Inggris</value>
-	</data>
-	<data name="Sentence25" xml:space="preserve">
-		<value>Saya mau menelpon seseorang</value>
-	</data>
-	<data name="Sentence26" xml:space="preserve">
-		<value>Saya perlu bantuan untuk visa saya</value>
-	</data>
-	<data name="Sentence27" xml:space="preserve">
-		<value>Saya haus</value>
-	</data>
-	<data name="Sentence28" xml:space="preserve">
-		<value>Apakah makanan ini halal?</value>
-	</data>
-	<data name="Sentence29" xml:space="preserve">
-		<value>Disini sangat dingin</value>
-	</data>
-	<data name="Sentence3" xml:space="preserve">
-		<value>Saya baik baik saja</value>
-	</data>
-	<data name="Sentence30" xml:space="preserve">
-		<value>Sekarang pukul berapa?</value>
-	</data>
-	<data name="Sentence4" xml:space="preserve">
-		<value>Tolong saya</value>
-	</data>
-	<data name="Sentence5" xml:space="preserve">
-		<value>Saya pengungsi</value>
-	</data>
-	<data name="Sentence6" xml:space="preserve">
-		<value>Saya tidak bisa bahasa Inggris</value>
-	</data>
-	<data name="Sentence7" xml:space="preserve">
-		<value>Dimana letak toilet?</value>
-	</data>
-	<data name="Sentence8" xml:space="preserve">
-		<value>Bagaimana cara ke alamat ini?</value>
-	</data>
-	<data name="Sentence9" xml:space="preserve">
-		<value>Dimana letak stasiun kereta?</value>
-	</data>
-	<data name="Indonesian" xml:space="preserve">
-		<value>Bahasa Indonesia</value>
-	</data>
+  <data name="Sentence10" xml:space="preserve">
+    <value>အနီးဆံုုး ရထား (သိုု ့) ဘတ္စ္ကားမွတ္တိုုင္က ဘယ္နားမွာလဲ။</value>
+  </data>
+  <data name="Sentence13" xml:space="preserve">
+    <value>ဘယ္ေလာက္က်သလဲ။</value>
+  </data>
+  <data name="Sentence14" xml:space="preserve">
+    <value>နားမလည္ဘူး။</value>
+  </data>
+  <data name="Sentence15" xml:space="preserve">
+    <value>ဖ်ားေနတယ္။</value>
+  </data>
+  <data name="Sentence16" xml:space="preserve">
+    <value>ေနစရာေနရာတစ္ခုုလိုုၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence17" xml:space="preserve">
+    <value>	ဆရာ၀န္နဲ့ ေတြ ့ၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence18" xml:space="preserve">
+    <value>စားစရာလိုုၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence19" xml:space="preserve">
+    <value>အလုုပ္လိုုၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence2" xml:space="preserve">
+    <value>ေနေကာင္းလား။</value>
+  </data>
+  <data name="Sentence20" xml:space="preserve">
+    <value>စိတ္က်န္းမာေရးေစာင့္ေရွာက္ေရး၀န္ေဆာင္မွဳလိုုၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence21" xml:space="preserve">
+    <value>ေငြလိုုၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence22" xml:space="preserve">
+    <value>အမ်ိဳးသမီးလစဥ္သံုုးပစၥည္းလိုုၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence23" xml:space="preserve">
+    <value>	ေပါင္မုုန္ ့၀ယ္ၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence24" xml:space="preserve">
+    <value>အဂၤလိပ္စာသင္ၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence25" xml:space="preserve">
+    <value>ကျွန်မဖုန်းကိုဖုန်းခေါ်ရန်လိုအပ်ပါတယ်</value>
+  </data>
+  <data name="Sentence26" xml:space="preserve">
+    <value>ဗီဇာ၀န္ေဆာင္မွဳလိုုၿခင္တယ္။</value>
+  </data>
+  <data name="Sentence27" xml:space="preserve">
+    <value>ေရလိုုၿခင္တယ္</value>
+  </data>
+  <data name="Sentence28" xml:space="preserve">
+    <value>ဒါက ဟာလာလား။</value>
+  </data>
+  <data name="Sentence29" xml:space="preserve">
+    <value>အရမ္းေအးတယ္။</value>
+  </data>
+  <data name="Sentence3" xml:space="preserve">
+    <value>ေကာင္းပါတယ္။</value>
+  </data>
+  <data name="Sentence30" xml:space="preserve">
+    <value>ဘယ္အခ်ိန္ရွိၿပီလဲ။</value>
+  </data>
+  <data name="Sentence5" xml:space="preserve">
+    <value>ငါကဒုုကၡသည္ပါ။</value>
+  </data>
+  <data name="Sentence6" xml:space="preserve">
+    <value>အဂၤလိပ္စကားေကာင္းေကာင္းမေၿပာတတ္ဘူး။</value>
+  </data>
+  <data name="Sentence7" xml:space="preserve">
+    <value>အိမ္သာဘယ္မွာလဲ။</value>
+  </data>
+  <data name="Sentence8" xml:space="preserve">
+    <value>ဒီလိပ္စာကိုုဘယ္လိုုသြားရမလဲ။</value>
+  </data>
+  <data name="Sentence9" xml:space="preserve">
+    <value>အနီးဆံုုးရထားဘူတာကဘယ္နားမွာလဲ။</value>
+  </data>
+  <data name="Start_Conversation" xml:space="preserve">
+    <value>စကားစေျပာရန္</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>ရထားလာတဲ့အခါစွန့်ခွာရသနည်း</value>
+  </data>
+  <data name="Train" xml:space="preserve">
+    <value>ဘူတာရုံအဘယ်မှာရှိသနည်း</value>
+  </data>
+  <data name="Translation" xml:space="preserve">
+    <value>ဘာသာၿပန္ၿခင္း</value>
+  </data>
+  <data name="Vaccinate" xml:space="preserve">
+    <value>ကာကွယ်ဆေးထိုးရန်လိုအပ်ပါသလား?</value>
+  </data>
+  <data name="Vaccinate1" xml:space="preserve">
+    <value>က်န္မာေရးကူညီေစာင့္ေရွာက္ေရး၀န္ေဆာင္္မွဳကိုဆက္သြယ္ပါ။</value>
+  </data>
+  <data name="Voice_Translation" xml:space="preserve">
+    <value>အသံၿဖင့္ဘာသာျပန္ၿခင္း</value>
+  </data>
+  <data name="Watermark_Location" xml:space="preserve">
+    <value>လိပ္စာကို ဒီမွာ ရွာနိုင္ပါသည္။</value>
+  </data>
+  <data name="Welcome1" xml:space="preserve">
+    <value>ငါတို့သည်သင်တို့ဗစ်တိုးရီးယားန်းကျင်ထောက်ခံမှုအဖွဲ့အစည်းများနှင့်ချိတ်ဆက်ကူညီပေးရန်</value>
+  </data>
+  <data name="Popup_Language_Choice" xml:space="preserve">
+    <value>ဘာသာစကားေ႐ြးပါ</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>အီးမေးလ်က:</value>
+  </data>
+  <data name="Email_Send" xml:space="preserve">
+    <value>အီးမေးလ်ပို။ ပါ</value>
+  </data>
+  <data name="Get_There" xml:space="preserve">
+    <value>အဲဒီမှာရဖို့ဘယ်လိုနေသလဲ?</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>ဖုန်းနံပါတ်:</value>
+  </data>
+  <data name="Sentence31" xml:space="preserve">
+    <value>ငါငွေကြေးထောက်ပံ့မှုလိုအပ်</value>
+  </data>
+  <data name="Sentence32" xml:space="preserve">
+    <value>ငှားဘယ်လောက်ဖြစ်ပါသည်</value>
+  </data>
+  <data name="Sentence33" xml:space="preserve">
+    <value>ငါစေတနာ့ဝန်ထမ်းဖြစ်ချင်တယ်</value>
+  </data>
+  <data name="Sentence34" xml:space="preserve">
+    <value>ငါကကူညီမယ့်စေတနာ့ဝန်ထမ်းလိုအပ်ပါတယ်</value>
+  </data>
+  <data name="Sentence35" xml:space="preserve">
+    <value>ငါအရက်သောက်ဆေးလိပ်ဖြတ်ရန်လိုအပ်ပါတယ်</value>
+  </data>
+  <data name="Sentence36" xml:space="preserve">
+    <value>ငါမူးယစ်ဆေးဖြတ်ဖို့လိုအပ်</value>
+  </data>
+  <data name="Sentence37" xml:space="preserve">
+    <value>သင်ဒီမှာအခြေချဖို့ကျွန်မကိုကူညီပေးနိုင်ပါသည်</value>
+  </data>
+  <data name="About_Us" xml:space="preserve">
+    <value>ကြ်န္ုပ္တို ့အေၿကာင္း</value>
+  </data>
+  <data name="Accomodation" xml:space="preserve">
+    <value>ေနစရာအိမ္</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>အားလုံး</value>
+  </data>
+  <data name="Button_Clear_Address" xml:space="preserve">
+    <value>ရှင်းလင်းသော</value>
+  </data>
+  <data name="Button_Clear_Checkbox" xml:space="preserve">
+    <value>ရှင်းလင်းသော ကိုအမှန်ခြစ်</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>:လိပ်စာ</value>
+  </data>
+  <data name="Hint_Search_Address" xml:space="preserve">
+    <value>သင်ဒီမှာလိပ်စာရှာဖွေနိုင်ပါတယ်:</value>
+  </data>
+  <data name="About_Us_Content" xml:space="preserve">
+    <value>ကြ်န္ပ္တို့အသင္းအမည္သည္ အံ့အားသင့္ျခင္း ျဖစ္ပါသည္။ အသင္းကို ၂/မတ္လ/၂၀၁၇ တြင္ စတင္ဖြဲ့စည္းခဲ့ပါသည္။
+အသင္းဝင္မ်ားမွာ မိုနပ္ရွ္ တကၠသိုလ္ေက်ာင္းမွ အိုင္တီေက်ာင္းသား မ်ားျဖစ္ေသာ
+ဖာရာတိုဟစ္। လုရန္ရီ। မင္မင္ဇီ। ရာကာတစ္အန္မမ္ တို့ျဖစ္ပါသည္။ 
+ကြ်န္ပ္တို့အဖြဲ ့သည္ ဗစ္တိုုးရီးယားနဲ ့ပူးေပါင္းေသာ ဒုကၡသည္မ်ားကို ကူညီမွဳ၀န္ေဆာင္ေပးေနေသာအဖြဲ ့အစည္း အမ်ိဳးမ်ိဳးနွင့္ ရွာေဖြၿခင္း ဆက္သြယ္ေပးၿခင္း မ်ား လုုပ္ေဆာင္ကူညီေပးရန္အတြက္ ဒီအင္တာနက္ စာမ်က္နွာကို တည္ေဆာက္ပါသည္။
+အစိုုးရမဟုုတ္ေသာအဖြဲ ့အစည္းမ်ားဆိုုသည္မွာ ေငြေၾကးအၿမတ္ရွာေဖြေသာ အဖြဲ ့အစည္းမ်ားမဟုုတ္ပါ။ အစိုုးရအေပါ ္မွီခိုုေသာ အဖြဲ ့အစည္းလည္းမဟုုတ္ပါ။ ဒီအင္တာနက္စာမ်က္နွာမွာ ေဖာ္ၿပထားေသာ အန္ဂ်ီအိုု အဖြဲ ့အစည္းမ်ားမွာ ဒုုကၡသည္မ်ားကိုု ၀န္ေဆာင္မွဳ အမ်ိဳးမ်ိဳးၿဖင့္ ကူညီရန္ၿဖစ္ပါသည္။
+</value>
+  </data>
+  <data name="About_Us_Thanks" xml:space="preserve">
+    <value>ကြှနျုပျတို့သညျဤ website အတွက်အသုံးပြုတဲ့ပွင့်လင်းသောအချက်အလက်စာရင်းများအတွက်ပါဝင်သည်:</value>
+  </data>
+  <data name="About_Us_Thanks_One" xml:space="preserve">
+    <value>ဗစ်တိုးရီးယားအတွက် 1. စေတနာ့ဝန်ထမ်းစင်တာများ</value>
+  </data>
+  <data name="About_Us_Thanks_Three" xml:space="preserve">
+    <value>ဗစ်တိုးရီးယားအတွက်လူသားချင်းစာနာထောက်ထားမှုဆိုင်ရာအခြေချန်ဆောင်မှုများပေး 3. အဖွဲ့အစည်းများ</value>
+  </data>
+  <data name="About_Us_Thanks_Two" xml:space="preserve">
+    <value>ဗစ်တိုးရီးယားအတွက်အခမဲ့စျေးပေါဘဝန်ဆောင်မှုများပေး 2. အဖွဲ့အစည်းများ</value>
+  </data>
+  <data name="Hint_Location" xml:space="preserve">
+    <value>
+Carnegie ဘူတာရုံ</value>
+  </data>
+  <data name="Button_Message_Close" xml:space="preserve">
+    <value>ပိတ်</value>
+  </data>
+  <data name="Button_Message_Send" xml:space="preserve">
+    <value>
+ပေးပို့</value>
+  </data>
+  <data name="Go_Top" xml:space="preserve">
+    <value>
+ထိပ်ကိုသွား</value>
+  </data>
+  <data name="Message_Step_One" xml:space="preserve">
+    <value>အဆင့် 1: သင့်ရဲ့မက်ဆေ့ခ်ျကိုရေးရန်</value>
+  </data>
+  <data name="Message_Step_Three" xml:space="preserve">
+    <value>အဆင့် 3: ခလုတ်ကိုနှိပ်ပါ</value>
+  </data>
+  <data name="Message_Step_Two" xml:space="preserve">
+    <value>
+အဆင့် 2: ဘာသာစကားကိုရွေးချယ်ပါ:</value>
+  </data>
+  <data name="Message_Translate" xml:space="preserve">
+    <value>
+ဘာသာပြန်</value>
+  </data>
+  <data name="Message_Translation_Result" xml:space="preserve">
+    <value>
+ဘာသာပြန်ချက်ရလဒ်</value>
+  </data>
+  <data name="Send_Your_Message_To" xml:space="preserve">
+    <value>သင့်ရဲ့မက်ဆေ့ခ်ျကိုမှ </value>
+  </data>
+  <data name="Your_Location" xml:space="preserve">
+    <value>သငျသညျ</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>
+အရေးပေါ်အခြေအနေ</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>ခါတိုင်းလိုစာကြောင်းများ</value>
+  </data>
+  <data name="Select_Topic" xml:space="preserve">
+    <value>ခေါင်းစဉ်ကို လုပ်ပါ</value>
+  </data>
+  <data name="Select_Topic_Slogan" xml:space="preserve">
+    <value>
+သငျသညျစကားပြောဆိုမှုများအတွက်အောက်ပါအကြောင်းအရာများမဆိုရှေးခယျြနိုငျပါသညျ!</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>ဦးတည်ချက်</value>
+  </data>
+  <data name="Button_Find_Location" xml:space="preserve">
+    <value>သင့်တည်နေရာကိုရှာပါ</value>
+  </data>
+  <data name="Indonesian" xml:space="preserve">
+    <value>မြန်မာ</value>
+  </data>
+  <data name="No_Email" xml:space="preserve">
+    <value>ဝမ်းနည်းပါတယ်, အီးမေးကိုမရရှိနိုင်</value>
+  </data>
+  <data name="The_Team" xml:space="preserve">
+    <value>အဖွဲ့</value>
+  </data>
+  <data name="The_Team_Database" xml:space="preserve">
+    <value>ဒေတာဘေ့စအထူးကု</value>
+  </data>
+  <data name="The_Team_Designer" xml:space="preserve">
+    <value>ပုံစံရေးဆှဲသူ</value>
+  </data>
+  <data name="The_Team_Manager" xml:space="preserve">
+    <value>စီမံကိန်းမန်နေဂျာ</value>
+  </data>
+  <data name="The_Team_Programmer" xml:space="preserve">
+    <value>ပရိုဂရမ်မာ</value>
+  </data>
 </root>

@@ -8,6 +8,7 @@ using System.Configuration;
 
 namespace MpathY.Controllers
 {
+    //This class is for connection between system and Access database
     public class dbconn
     {
         public static OleDbConnection GetConnection()

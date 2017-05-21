@@ -11,38 +11,45 @@ using System.Net;
 
 namespace MpathY.Controllers
 {
+    /*
+     * This is the Home page controller.
+     * Defines all the action within home page.
+     */
     public class HomeController : Controller
     {
+        //Call index page
         public ActionResult Index(SearchByTypeReq req)
         {
             var conn = new wholeOrgList(req);
             return View(conn);
         }
-
+        //Call About page
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
-
+        //Call Contact page
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
+        //Call Search page
         public ActionResult Search()
         {
             return View();
         }
+        //Search button for iteration 1
         [HttpPost]
         public ActionResult SearchBtn(SearchByTypeReq req)
         {
             
             return View(req);
         }
-
+        //Search result for iteration 1
         public ActionResult testView(SearchByTypeReq req)
         {
             var conn = new orgtypedb(req);
@@ -51,47 +58,7 @@ namespace MpathY.Controllers
 
             return View(conn);
         }
-        //public ActionResult Form(SearchByTypeReq req)
-        //{
-        //    var conn = new wholeOrgList(req);
-        //    return View(conn);
-        //}
-        [HttpPost]
-        public ActionResult Form(string userName, string userEmail, string userNumber, string userSubject, string userMsg)
-        {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    MailMessage mail = new MailMessage();
-
-                    mail.To.Add("empathi.amaze@gmail.com");
-                    mail.From = new MailAddress("empathi.amaze@gmail.com","amaze");
-                    mail.Subject = "sub";
-
-                    mail.Body = "asdf";
-
-                    mail.IsBodyHtml = true;
-                    SmtpClient smtp = new SmtpClient();
-                    smtp.Host = "smtp.monash.edu.au"; //Or Your SMTP Server Address
-                    smtp.Credentials = new System.Net.NetworkCredential("empathi.amaze@gmail.com", "teamamze"); // ***use valid credentials***
-                    smtp.Port = 456;
-
-                    //Or your Smtp Email ID and Password
-                    smtp.EnableSsl = true;
-                    //smtp.Send(mail);
-                }
-            }
-            catch(Exception e)
-            {
-               ViewBag.Error = "There are some errors in sending e-mail." + e.StackTrace +e.Message;
-                Console.WriteLine(e.StackTrace + e.Message);
-            }
-            
-            return View();
-        }
-
-       // OleDbConnection myConn = dbconn.GetConnection();
         
+       
     }
 }

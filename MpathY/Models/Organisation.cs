@@ -6,8 +6,10 @@ using System.ComponentModel.DataAnnotations;//for Required statement
 
 namespace MpathY.Models
 {
+    //This class defines Organisation and all the attributes for each orgnasation object.
     public class Organisation
     {
+
         public int OrgId { get; set; }
         [Required]
         [StringLength(255)]

@@ -128,15 +128,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Global.ar-sa.resx</DependentUpon>
     </Compile>
+    <Compile Include="Content\App_LocalResources\Lang\Global.id.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.id.resx</DependentUpon>
+    </Compile>
     <Compile Include="Content\App_LocalResources\Lang\Global.ms.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Global.ms.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\App_LocalResources\Lang\Global.ps.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.ps.resx</DependentUpon>
     </Compile>
     <Compile Include="Content\App_LocalResources\Lang\Global.th1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -152,7 +152,6 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LanguageController.cs" />
-    <Compile Include="Controllers\OrgController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -162,7 +161,6 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classification.cs" />
-    <Compile Include="Models\EmailFormModel.cs" />
     <Compile Include="Models\MyDbContext.cs" />
     <Compile Include="Models\Organisation.cs" />
     <Compile Include="Models\orgtypedb.cs" />
@@ -220,8 +218,7 @@
     <Content Include="Content\mytemplate\images\team\4.jpg" />
     <Content Include="Content\mytemplate\images\team\bill.jpg" />
     <Content Include="Content\mytemplate\images\team\fez.jpg" />
-    <Content Include="Content\mytemplate\images\team\mingming.jpg" />
-    <Content Include="Content\mytemplate\images\team\raj.jpg" />
+    <Content Include="Content\mytemplate\images\team\luyang.jpg" />
     <Content Include="Content\mytemplate\images\twitter-bg.jpg" />
     <Content Include="Content\mytemplate\images\welcometoempathi.png" />
     <Content Include="Content\mytemplate\js\bootstrap.min.js" />
@@ -292,15 +289,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Org\ShowName.cshtml" />
-    <Content Include="Views\Org\PassToView.cshtml" />
-    <Content Include="Views\Org\ClassOrgView.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
-    <Content Include="Views\Org\testView.cshtml" />
-    <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Shared\_mytemplate.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\PageNotFound.cshtml" />
@@ -313,14 +303,14 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Content\App_LocalResources\Lang\Global.id.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Global.id.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Content\App_LocalResources\Lang\Global.ms.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Global.ms.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Content\App_LocalResources\Lang\Global.ps.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Global.ps.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Content\App_LocalResources\Lang\Global.ar-sa.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
